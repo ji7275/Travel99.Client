@@ -3,21 +3,19 @@ import "./Home.css";
 //import "./About.css";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "";
-
 const slides = [
   {
     id: 4,
-    image: "/Images/travel2.jpg",
+    image: `${import.meta.env.BASE_URL}Images/travel2.jpg`,
     tag: "YOUR NEXT ADVENTURE AWAITS",
     title: "Explore the World",
     subtitle: "Make Every Journey Special.",
     description:
       "Explore amazing destinations with Travel99 and enjoy a memorable travel experience.",
   },
-
   {
     id: 2,
-    image: "/Images/Travel3.jpg",
+    image: `${import.meta.env.BASE_URL}Images/Travel3.jpg`,
     tag: "TRAVEL • VISA • HOLIDAYS",
     title: "Discover the World",
     subtitle: "Your Journey, Our Expertise.",
@@ -26,14 +24,13 @@ const slides = [
   },
   {
     id: 5,
-    image: "/Images/Packeges.png",
+    image: `${import.meta.env.BASE_URL}Images/Packeges.png`,
     tag: "TRAVEL • VISA • HOLIDAYS",
     title: "Discover the World",
     subtitle: "Your Journey, Our Expertise.",
     description:
       "From visa guidance to memorable holidays, plan your next journey with Travel99.",
   },
-
   {
     image:
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1900",
@@ -45,7 +42,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/Images/Travel1.jpg",
+    image: `${import.meta.env.BASE_URL}Images/Travel1.jpg`,
     tag: "MAKE YOUR TRAVEL DREAMS REAL",
     title: "Experience Europe",
     subtitle: "Travel With Confidence.",
@@ -53,6 +50,55 @@ const slides = [
       "Discover beautiful destinations and let us help you plan a smooth travel experience.",
   },
 ];
+// const slides = [
+//   {
+//     id: 4,
+//     image: "/Images/travel2.jpg",
+//     tag: "YOUR NEXT ADVENTURE AWAITS",
+//     title: "Explore the World",
+//     subtitle: "Make Every Journey Special.",
+//     description:
+//       "Explore amazing destinations with Travel99 and enjoy a memorable travel experience.",
+//   },
+
+//   {
+//     id: 2,
+//     image: "/Images/Travel3.jpg",
+//     tag: "TRAVEL • VISA • HOLIDAYS",
+//     title: "Discover the World",
+//     subtitle: "Your Journey, Our Expertise.",
+//     description:
+//       "From visa guidance to memorable holidays, plan your next journey with Travel99.",
+//   },
+//   {
+//     id: 5,
+//     image: "/Images/Packeges.png",
+//     tag: "TRAVEL • VISA • HOLIDAYS",
+//     title: "Discover the World",
+//     subtitle: "Your Journey, Our Expertise.",
+//     description:
+//       "From visa guidance to memorable holidays, plan your next journey with Travel99.",
+//   },
+
+//   {
+//     image:
+//       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1900",
+//     tag: "YOUR INTERNATIONAL JOURNEY STARTS HERE",
+//     title: "Explore Dubai",
+//     subtitle: "Make Every Moment Count.",
+//     description:
+//       "Get travel guidance, visa assistance and personalized international holiday options.",
+//   },
+//   {
+//     id: 3,
+//     image: "/Images/Travel1.jpg",
+//     tag: "MAKE YOUR TRAVEL DREAMS REAL",
+//     title: "Experience Europe",
+//     subtitle: "Travel With Confidence.",
+//     description:
+//       "Discover beautiful destinations and let us help you plan a smooth travel experience.",
+//   },
+// ];
 
 // const API_BASE = import.meta.env.VITE_API_BASE_URL || "";
 
@@ -152,27 +198,26 @@ const travelServices = [
     text: "Discover destinations with planned travel experiences.",
   },
 ];
-
 const defaultDestinations = [
   {
     name: "Goa",
     country: "India",
-    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+    image: `${import.meta.env.BASE_URL}Images/Goa.jpg`,
   },
   {
     name: "Dubai",
     country: "UAE",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900",
+    image: `${import.meta.env.BASE_URL}Images/Dubai/Dubai.jpg`,
   },
   {
     name: "Switzerland",
     country: "Europe",
-    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=900",
+    image: `${import.meta.env.BASE_URL}Images/Switzerland/Switzerland.jpg`,
   },
   {
     name: "Bali",
     country: "Indonesia",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900",
+    image: `${import.meta.env.BASE_URL}Images/Bali/Bali.jpg`,
   },
 ];
 
@@ -183,8 +228,7 @@ const defaultPackages = [
     destination: "Goa, India",
     duration: "4 Days / 3 Nights",
     price: "On Request",
-    imageUrl:
-      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+    imageUrl: `${import.meta.env.BASE_URL}Images/Goa.jpg`,
   },
   {
     packageId: 2,
@@ -192,8 +236,7 @@ const defaultPackages = [
     destination: "Dubai, UAE",
     duration: "5 Days / 4 Nights",
     price: "On Request",
-    imageUrl:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900",
+    imageUrl: `${import.meta.env.BASE_URL}Images/Dubai/DubaiF.jpg`,
   },
   {
     packageId: 3,
@@ -201,10 +244,62 @@ const defaultPackages = [
     destination: "Bali, Indonesia",
     duration: "6 Days / 5 Nights",
     price: "On Request",
-    imageUrl:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900",
+    imageUrl: `${import.meta.env.BASE_URL}Images/Bali/BaliA.jpg`,
   },
 ];
+
+// const defaultDestinations = [
+//   {
+//     name: "Goa",
+//     country: "India",
+//     image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+//   },
+//   {
+//     name: "Dubai",
+//     country: "UAE",
+//     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900",
+//   },
+//   {
+//     name: "Switzerland",
+//     country: "Europe",
+//     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=900",
+//   },
+//   {
+//     name: "Bali",
+//     country: "Indonesia",
+//     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900",
+//   },
+// ];
+
+// const defaultPackages = [
+//   {
+//     packageId: 1,
+//     packageName: "Beautiful Goa Escape",
+//     destination: "Goa, India",
+//     duration: "4 Days / 3 Nights",
+//     price: "On Request",
+//     imageUrl:
+//       "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+//   },
+//   {
+//     packageId: 2,
+//     packageName: "Dubai City Experience",
+//     destination: "Dubai, UAE",
+//     duration: "5 Days / 4 Nights",
+//     price: "On Request",
+//     imageUrl:
+//       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900",
+//   },
+//   {
+//     packageId: 3,
+//     packageName: "Bali Island Holiday",
+//     destination: "Bali, Indonesia",
+//     duration: "6 Days / 5 Nights",
+//     price: "On Request",
+//     imageUrl:
+//       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900",
+//   },
+// ];
 
 const benefits = [
   {
@@ -935,6 +1030,101 @@ function Home() {
                 month: "NOV",
                 year: "2026",
                 category: "South Africa Visa",
+                image: `${import.meta.env.BASE_URL}Images/New1.png`,
+                title: "South Africa Visa Updates for Indian Travellers",
+                description:
+                  "Latest information and important updates about South Africa visa applications.",
+              },
+              {
+                day: "18",
+                month: "NOV",
+                year: "2026",
+                category: "Visa News",
+                image: `${import.meta.env.BASE_URL}Images/New2.png`,
+                title: "Latest Visa and Immigration News",
+                description:
+                  "Important visa announcements and immigration updates for international travellers.",
+              },
+              {
+                day: "14",
+                month: "NOV",
+                year: "2026",
+                category: "Bangladesh",
+                image: `${import.meta.env.BASE_URL}Images/bangladesh.jpg`,
+                title: "Bangladesh Visa and Travel Updates",
+                description:
+                  "Important travel information and visa-related updates for Bangladesh.",
+              },
+              {
+                day: "10",
+                month: "NOV",
+                year: "2026",
+                category: "China",
+                image: `${import.meta.env.BASE_URL}Images/china.jpg`,
+                title: "China Visa Guidelines and Travel Information",
+                description:
+                  "Explore essential visa information and travel guidelines for China.",
+              },
+              {
+                day: "06",
+                month: "NOV",
+                year: "2026",
+                category: "Russia",
+                image: `${import.meta.env.BASE_URL}Images/Russia.jpg`,
+                title: "Russia Visa Updates and Travel Guidelines",
+                description:
+                  "Get useful information about Russia visa requirements and international travel.",
+              },
+              {
+                day: "02",
+                month: "NOV",
+                year: "2026",
+                category: "India",
+                image: `${import.meta.env.BASE_URL}Images/india1.png`,
+                title: "India Visa and Travel Documentation Updates",
+                description:
+                  "Know about important travel documents and visa application requirements in India.",
+              },
+            ].map((news, index) => (
+              <article className="latest-news-card" key={index}>
+                <div className="news-image-wrapper">
+                  <img
+                    src={news.image}
+                    alt={news.title}
+                    className="news-image"
+                  />
+
+                  <div className="news-image-date">
+                    <strong>{news.day}</strong>
+                    <span>{news.month}</span>
+                    <small>{news.year}</small>
+                  </div>
+
+                  <span className="news-category">{news.category}</span>
+                </div>
+
+                <div className="news-card-content">
+                  <h3>{news.title}</h3>
+                  <p>{news.description}</p>
+
+                  <a
+                    href={`mailto:travelhigh99@gmail.com?subject=${encodeURIComponent(news.title)}`}
+                    className="news-read-more"
+                  >
+                    Read More <span>→</span>
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* <div className="latest-news-grid">
+            {[
+              {
+                day: "21",
+                month: "NOV",
+                year: "2026",
+                category: "South Africa Visa",
                 image: "/Images/New1.png",
                 title: "South Africa Visa Updates for Indian Travellers",
                 description:
@@ -992,7 +1182,7 @@ function Home() {
               },
             ].map((news, index) => (
               <article className="latest-news-card" key={index}>
-                {/* NEWS IMAGE */}
+            
                 <div className="news-image-wrapper">
                   <img
                     src={news.image}
@@ -1009,7 +1199,7 @@ function Home() {
                   <span className="news-category">{news.category}</span>
                 </div>
 
-                {/* NEWS CONTENT */}
+              
                 <div className="news-card-content">
                   <h3>{news.title}</h3>
 
@@ -1024,7 +1214,7 @@ function Home() {
                 </div>
               </article>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -68,12 +68,21 @@ function Header() {
       <header className="travel-header">
         <div className="travel-header-container navbar">
           {/* BRAND LOGO */}
-          <a href="/" className="travel-brand" onClick={closeMenu}>
+
+          {/* <a href="/" className="travel-brand" onClick={closeMenu}>
             <img
               src="/Images/logo.png"
               alt="Travel99"
               className="travel-brand-logo"
+            /> */}
+
+          <a href="/" className="travel-brand" onClick={closeMenu}>
+            <img
+              src="/Travel99.Client/Images/logo.png"
+              alt="Travel99"
+              className="travel-brand-logo"
             />
+            {/* </a> */}
 
             <div className="travel-brand-name">
               <h2>

@@ -10,8 +10,12 @@ function Footer() {
           {/* ABOUT */}
           <div className="footer-about">
             <a href="/" className="footer-logo">
-              <img src="/Images/logo.png" alt="Travel99 Logo" />
-
+              {/* <img src="/Images/logo.png" alt="Travel99 Logo" /> */}
+              <img
+                src="/Travel99.Client/Images/logo.png"
+                alt="Travel99 Logo"
+                className="footer-logo"
+              />
               <span className="footer-logo-text">
                 <span className="footer-logo-title">
                   Travel High <strong>99</strong>
@@ -20,21 +24,21 @@ function Footer() {
               </span>
             </a>
             <p
-  style={{
-    textAlign: "justify",
-    textAlignLast: "left",
-    lineHeight: "1.8",
-    width: "100%",
-    margin: "0 auto",
-    padding: "0 10px",
-    boxSizing: "border-box"
-  }}
->
-  Travel High 99 is your trusted travel partner for unforgettable
-  journeys. We provide holiday packages, flight bookings, hotel
-  reservations, visa assistance and complete travel solutions to
-  make your journey comfortable and memorable.
-</p>
+              style={{
+                textAlign: "justify",
+                textAlignLast: "left",
+                lineHeight: "1.8",
+                width: "100%",
+                margin: "0 auto",
+                padding: "0 10px",
+                boxSizing: "border-box",
+              }}
+            >
+              Travel High 99 is your trusted travel partner for unforgettable
+              journeys. We provide holiday packages, flight bookings, hotel
+              reservations, visa assistance and complete travel solutions to
+              make your journey comfortable and memorable.
+            </p>
             {/* <p>
               Travel High 99 is your trusted travel partner for unforgettable
               journeys. We provide holiday packages, flight bookings, hotel

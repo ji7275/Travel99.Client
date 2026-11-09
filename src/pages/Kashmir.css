@@ -1,0 +1,957 @@
+/* =====================================
+   KASHMIR PAGE - TRAVEL HIGH 99
+===================================== */
+
+.kashmir-page {
+  width: 100%;
+  overflow: hidden;
+  color: #263b52;
+  font-family: inherit;
+}
+
+.kashmir-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.kashmir-section {
+  padding: 85px 0;
+}
+
+.kashmir-section-tag {
+  display: inline-block;
+  color: #d99a43;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+/* HERO */
+
+.kashmir-hero {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?w=2000");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.kashmir-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 24, 45, 0.88) 0%,
+    rgba(5, 24, 45, 0.58) 55%,
+    rgba(5, 24, 45, 0.12) 100%
+  );
+}
+
+.kashmir-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.kashmir-hero-tag {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.kashmir-hero h1 {
+  max-width: 750px;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.08;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 22px;
+}
+
+.kashmir-hero h1 span {
+  display: block;
+  color: #f4b45f;
+}
+
+.kashmir-hero-content > p {
+  max-width: 610px;
+  color: #edf3f8;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.kashmir-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.kashmir-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.kashmir-btn-orange {
+  background: #f4a340;
+  color: #142d49;
+}
+
+.kashmir-btn-orange:hover {
+  background: #fff;
+  color: #142d49;
+  transform: translateY(-3px);
+}
+
+.kashmir-btn-outline {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.kashmir-btn-outline:hover {
+  background: #fff;
+  color: #142d49;
+}
+
+.kashmir-hero-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 55px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* INTRO */
+
+.kashmir-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.kashmir-intro-image {
+  position: relative;
+  height: 490px;
+}
+
+.kashmir-intro-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.kashmir-image-caption {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 16px 22px;
+  border-radius: 7px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.kashmir-image-caption strong {
+  color: #102b4e;
+  font-size: 22px;
+}
+
+.kashmir-image-caption span {
+  color: #78879a;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.kashmir-intro-content h2 {
+  color: #102b4e;
+  font-size: clamp(30px, 3.5vw, 43px);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.kashmir-intro-content h2 span {
+  color: #d99a43;
+}
+
+.kashmir-intro-content > p {
+  color: #718096;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.kashmir-intro-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.kashmir-intro-points div {
+  color: #263f5a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.kashmir-intro-points div::first-letter {
+  color: #d99a43;
+}
+
+.kashmir-text-link {
+  display: inline-block;
+  color: #102b4e;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid #e7a34a;
+  padding-bottom: 7px;
+}
+
+/* COMMON SECTION HEADING */
+
+.kashmir-section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 45px;
+}
+
+.kashmir-section-heading h2 {
+  color: #102b4e;
+  font-size: clamp(29px, 4vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 13px;
+}
+
+.kashmir-section-heading p {
+  color: #78879a;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* DESTINATIONS */
+
+.kashmir-places {
+  background: #f5f8fc;
+}
+
+.kashmir-place-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.kashmir-place-card {
+  background: #fff;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(16, 43, 78, 0.06);
+  transition: 0.3s ease;
+}
+
+.kashmir-place-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(16, 43, 78, 0.12);
+}
+
+.kashmir-place-image {
+  position: relative;
+  height: 235px;
+  overflow: hidden;
+}
+
+.kashmir-place-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.kashmir-place-card:hover .kashmir-place-image img {
+  transform: scale(1.08);
+}
+
+.kashmir-place-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 11px;
+  border-radius: 4px;
+  background: #fff;
+  color: #102b4e;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.kashmir-place-info {
+  padding: 22px 19px 24px;
+}
+
+.kashmir-place-info > span {
+  color: #d99a43;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.kashmir-place-info h3 {
+  color: #102b4e;
+  font-size: 22px;
+  margin: 9px 0;
+}
+
+.kashmir-place-info p {
+  color: #7a8797;
+  font-size: 13px;
+  line-height: 1.8;
+  min-height: 94px;
+  margin-bottom: 17px;
+}
+
+.kashmir-place-info a {
+  color: #102b4e;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.kashmir-place-info a:hover {
+  color: #d99a43;
+}
+
+/* EXPERIENCES */
+
+.kashmir-experience {
+  background: #fff;
+}
+
+.kashmir-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.kashmir-experience-card {
+  padding: 32px 23px;
+  text-align: center;
+  background: #f6f8fb;
+  border: 1px solid #e9eef5;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.kashmir-experience-card:hover {
+  background: #102b4e;
+  transform: translateY(-6px);
+}
+
+.kashmir-experience-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #fff0dd;
+  font-size: 29px;
+}
+
+.kashmir-experience-card h3 {
+  color: #102b4e;
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+
+.kashmir-experience-card p {
+  color: #7a8797;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.kashmir-experience-card:hover h3,
+.kashmir-experience-card:hover p {
+  color: #fff;
+}
+
+/* PACKAGES */
+
+.kashmir-packages {
+  background: #f5f8fc;
+}
+
+.kashmir-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.kashmir-package-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(16, 43, 78, 0.07);
+  transition: 0.3s ease;
+}
+
+.kashmir-package-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 35px rgba(16, 43, 78, 0.13);
+}
+
+.kashmir-package-image {
+  height: 230px;
+  position: relative;
+}
+
+.kashmir-package-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.kashmir-package-image > span {
+  position: absolute;
+  bottom: 14px;
+  left: 15px;
+  background: #fff;
+  color: #102b4e;
+  padding: 8px 13px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.kashmir-package-content {
+  padding: 24px;
+}
+
+.kashmir-package-content h3 {
+  color: #102b4e;
+  font-size: 20px;
+  margin: 0 0 9px;
+}
+
+.kashmir-package-price {
+  color: #d99a43;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 17px;
+}
+
+.kashmir-package-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.kashmir-package-content li {
+  color: #748296;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.kashmir-package-content li::first-letter {
+  color: #d99a43;
+}
+
+.kashmir-package-content > a {
+  display: block;
+  text-align: center;
+  background: #102b4e;
+  color: #fff;
+  padding: 13px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.kashmir-package-content > a:hover {
+  background: #f4a340;
+  color: #102b4e;
+}
+
+/* WHY CHOOSE US */
+
+.kashmir-why {
+  padding: 85px 0;
+  background: #102b4e;
+  color: #fff;
+}
+
+.kashmir-why-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.kashmir-why .kashmir-section-tag {
+  color: #f4b45f;
+}
+
+.kashmir-why-grid > div:first-child h2 {
+  color: #fff;
+  font-size: 39px;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.kashmir-why-grid > div:first-child p {
+  color: #c5d1df;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.kashmir-why-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.kashmir-why-items > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.kashmir-why-items > div > span {
+  color: #f4b45f;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.kashmir-why-items h3 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 7px;
+}
+
+.kashmir-why-items p {
+  color: #c5d1df;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ENQUIRY SECTION */
+
+.kashmir-enquiry {
+  background: #f5f8fc;
+}
+
+.kashmir-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.kashmir-enquiry-content h2 {
+  color: #102b4e;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 17px;
+}
+
+.kashmir-enquiry-content h2 span {
+  display: block;
+  color: #d99a43;
+}
+
+.kashmir-enquiry-content > p {
+  color: #758397;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 26px;
+}
+
+.kashmir-enquiry-content > h3 {
+  color: #102b4e;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.kashmir-contact-label {
+  color: #d99a43 !important;
+  font-size: 12px !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 15px 0 8px !important;
+  text-transform: uppercase;
+}
+
+.kashmir-contact-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 17px;
+  border-radius: 9px;
+  border: 1px solid #e7edf4;
+}
+
+.kashmir-contact-box > span {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff0dd;
+  color: #d99a43;
+  border-radius: 8px;
+  font-size: 21px;
+}
+
+.kashmir-contact-box a {
+  display: block;
+  color: #102b4e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.kashmir-contact-box a:hover {
+  color: #d99a43;
+}
+
+/* ENQUIRY FORM */
+
+.kashmir-enquiry-form {
+  background: #fff;
+  padding: 36px;
+  border-radius: 15px;
+  border: 1px solid #e7edf4;
+  box-shadow: 0 15px 45px rgba(16, 43, 78, 0.08);
+}
+
+.kashmir-form-heading {
+  margin-bottom: 25px;
+}
+
+.kashmir-form-heading > span {
+  color: #d99a43;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.kashmir-form-heading h3 {
+  color: #102b4e;
+  font-size: 27px;
+  margin: 9px 0;
+}
+
+.kashmir-form-heading p {
+  color: #8591a1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.kashmir-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.kashmir-form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.kashmir-form-full {
+  grid-column: 1 / -1;
+}
+
+.kashmir-form-group label {
+  color: #344b64;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.kashmir-form-group input,
+.kashmir-form-group select,
+.kashmir-form-group textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  background: #f9fbfd;
+  border: 1px solid #dce4ee;
+  border-radius: 7px;
+  color: #263b52;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.kashmir-form-group input,
+.kashmir-form-group select {
+  height: 47px;
+}
+
+.kashmir-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.kashmir-form-group input:focus,
+.kashmir-form-group select:focus,
+.kashmir-form-group textarea:focus {
+  border-color: #d99a43;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(217, 154, 67, 0.12);
+}
+
+.kashmir-submit-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 7px;
+  background: #102b4e;
+  color: #fff;
+  padding: 16px;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.kashmir-submit-btn:hover {
+  background: #f4a340;
+  color: #102b4e;
+  transform: translateY(-2px);
+}
+
+.kashmir-form-note {
+  display: block;
+  text-align: center;
+  color: #8995a4;
+  font-size: 11px;
+  margin-top: 13px;
+}
+
+/* FINAL CTA */
+
+.kashmir-final-cta {
+  padding: 75px 20px;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(9, 35, 61, 0.88), rgba(9, 35, 61, 0.88)),
+    url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1800")
+      center/cover;
+}
+
+.kashmir-final-cta span {
+  color: #f4b45f;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.kashmir-final-cta h2 {
+  color: #fff;
+  font-size: clamp(27px, 4vw, 42px);
+  margin: 15px 0;
+}
+
+.kashmir-final-cta p {
+  color: #e1e8ef;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.kashmir-final-cta a {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 6px;
+  background: #f4a340;
+  color: #102b4e;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.kashmir-final-cta a:hover {
+  background: #fff;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .kashmir-place-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kashmir-experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kashmir-intro-grid,
+  .kashmir-enquiry-grid,
+  .kashmir-why-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .kashmir-intro-image {
+    height: 400px;
+  }
+
+  .kashmir-package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .kashmir-section {
+    padding: 55px 0;
+  }
+
+  .kashmir-container {
+    width: 92%;
+  }
+
+  .kashmir-hero {
+    min-height: 570px;
+    background-position: center;
+  }
+
+  .kashmir-hero h1 {
+    font-size: 43px;
+  }
+
+  .kashmir-hero-content > p {
+    font-size: 14px;
+  }
+
+  .kashmir-hero-bottom {
+    gap: 12px;
+    margin-top: 35px;
+    font-size: 11px;
+  }
+
+  .kashmir-btn {
+    width: 100%;
+  }
+
+  .kashmir-intro-image {
+    height: 300px;
+  }
+
+  .kashmir-intro-grid {
+    gap: 30px;
+  }
+
+  .kashmir-intro-content h2,
+  .kashmir-enquiry-content h2 {
+    font-size: 31px;
+  }
+
+  .kashmir-intro-points {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .kashmir-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .kashmir-place-grid,
+  .kashmir-experience-grid,
+  .kashmir-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kashmir-place-image {
+    height: 230px;
+  }
+
+  .kashmir-place-info p {
+    min-height: auto;
+  }
+
+  .kashmir-experience-card {
+    padding: 25px 20px;
+  }
+
+  .kashmir-why {
+    padding: 55px 0;
+  }
+
+  .kashmir-why-grid > div:first-child h2 {
+    font-size: 31px;
+  }
+
+  .kashmir-why-items {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .kashmir-enquiry-form {
+    padding: 23px 16px;
+  }
+
+  .kashmir-form-heading h3 {
+    font-size: 23px;
+  }
+
+  .kashmir-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kashmir-form-full {
+    grid-column: auto;
+  }
+
+  .kashmir-contact-box {
+    padding: 13px;
+  }
+
+  .kashmir-contact-box a {
+    font-size: 12px;
+  }
+
+  .kashmir-final-cta {
+    padding: 55px 15px;
+  }
+}

@@ -1,0 +1,619 @@
+.himachal-page {
+  width: 100%;
+  overflow: hidden;
+  color: #263449;
+  font-family: Arial, sans-serif;
+}
+
+.himachal-container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.himachal-section {
+  padding: 85px 0;
+}
+
+.himachal-hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(3, 16, 45, 0.82), rgba(3, 16, 45, 0.18)),
+    url("https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1920")
+      center/cover no-repeat;
+}
+
+.himachal-hero-content {
+  max-width: 700px;
+  color: #fff;
+  padding: 90px 0;
+}
+
+.himachal-hero-tag,
+.himachal-tag {
+  display: inline-block;
+  color: #f59b32;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.himachal-hero h1 {
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 1.12;
+  margin: 0 0 22px;
+  color: #fff;
+}
+
+.himachal-hero h1 span {
+  color: #ffae48;
+}
+
+.himachal-hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 600px;
+  color: #f3f3f3;
+  margin-bottom: 30px;
+}
+
+.himachal-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.himachal-btn,
+.himachal-btn-outline {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.himachal-btn {
+  background: #f59b32;
+  color: #fff;
+  border: 2px solid #f59b32;
+}
+
+.himachal-btn:hover {
+  background: #dc7f18;
+  border-color: #dc7f18;
+}
+
+.himachal-btn-outline {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.himachal-btn-outline:hover {
+  background: #fff;
+  color: #102b4e;
+}
+
+/* ABOUT */
+
+.himachal-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.himachal-about-image {
+  position: relative;
+  height: 460px;
+}
+
+.himachal-about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.himachal-image-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #f59b32;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.himachal-about-content h2,
+.himachal-heading h2,
+.himachal-enquiry-info h2 {
+  color: #102b4e;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.himachal-about-content h2 span {
+  color: #f59b32;
+}
+
+.himachal-about-content p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.himachal-about-content .himachal-btn {
+  margin-top: 10px;
+}
+
+/* SECTION HEADINGS */
+
+.himachal-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.himachal-heading h2 {
+  margin-bottom: 12px;
+}
+
+.himachal-heading p {
+  color: #697586;
+  line-height: 1.7;
+}
+
+/* DESTINATIONS */
+
+.himachal-destinations {
+  background: #f6f8fb;
+}
+
+.himachal-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.himachal-destination-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.himachal-destination-card:hover {
+  transform: translateY(-8px);
+}
+
+.himachal-card-image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.himachal-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.himachal-destination-card:hover img {
+  transform: scale(1.08);
+}
+
+.himachal-card-content {
+  padding: 24px;
+}
+
+.himachal-card-content span {
+  color: #f59b32;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.himachal-card-content h3 {
+  color: #102b4e;
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.himachal-card-content p {
+  color: #697586;
+  line-height: 1.7;
+  font-size: 14px;
+  min-height: 70px;
+}
+
+.himachal-card-content button,
+.himachal-package-content button {
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  color: #ed8c20;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* EXPERIENCES */
+
+.himachal-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.himachal-experience-card {
+  background: #f6f8fb;
+  padding: 30px 25px;
+  border-radius: 9px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.himachal-experience-card:hover {
+  background: #102b4e;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.himachal-experience-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.himachal-experience-card h3 {
+  color: #102b4e;
+  margin: 10px 0;
+}
+
+.himachal-experience-card:hover h3,
+.himachal-experience-card:hover p {
+  color: #fff;
+}
+
+.himachal-experience-card p {
+  color: #697586;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* PACKAGES */
+
+.himachal-packages {
+  background: #f6f8fb;
+}
+
+.himachal-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.himachal-package-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.himachal-package-image {
+  height: 245px;
+  position: relative;
+}
+
+.himachal-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.himachal-package-image span {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #f59b32;
+  color: #fff;
+  padding: 9px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.himachal-package-content {
+  padding: 25px;
+}
+
+.himachal-package-content h3 {
+  color: #102b4e;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+.himachal-package-content p {
+  color: #697586;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 70px;
+}
+
+/* WHY CHOOSE US */
+
+.himachal-why {
+  background: #fff;
+}
+
+.himachal-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.himachal-why-card {
+  background: #f6f8fb;
+  text-align: center;
+  padding: 30px 18px;
+  border-radius: 9px;
+}
+
+.himachal-why-card span {
+  font-size: 38px;
+}
+
+.himachal-why-card h3 {
+  color: #102b4e;
+  font-size: 17px;
+  margin: 16px 0 10px;
+}
+
+.himachal-why-card p {
+  color: #697586;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ENQUIRY */
+
+.himachal-enquiry {
+  background: #f5f7fa;
+}
+
+.himachal-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.himachal-enquiry-info h2 {
+  margin-bottom: 18px;
+}
+
+.himachal-enquiry-info > p {
+  color: #697586;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.himachal-contact-item {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.himachal-contact-item > span {
+  background: #fff0df;
+  color: #f59b32;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.himachal-contact-item h4 {
+  color: #102b4e;
+  margin: 0 0 7px;
+}
+
+.himachal-contact-item p {
+  color: #697586;
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.himachal-enquiry-form {
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.07);
+}
+
+.himachal-enquiry-form h3 {
+  color: #102b4e;
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.himachal-enquiry-form > p {
+  color: #697586;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.himachal-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.himachal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.himachal-form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #263449;
+}
+
+.himachal-form-group input,
+.himachal-form-group select,
+.himachal-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #dce1e8;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+
+.himachal-form-group input:focus,
+.himachal-form-group select:focus,
+.himachal-form-group textarea:focus {
+  border-color: #f59b32;
+}
+
+.himachal-form-full {
+  grid-column: 1 / -1;
+}
+
+.himachal-submit-btn {
+  width: 100%;
+  border: none;
+  background: #f59b32;
+  color: #fff;
+  padding: 15px;
+  margin-top: 22px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.himachal-submit-btn:hover {
+  background: #dc7f18;
+}
+
+.himachal-enquiry-form small {
+  display: block;
+  text-align: center;
+  color: #87909d;
+  margin-top: 12px;
+}
+
+/* CTA */
+
+.himachal-cta {
+  padding: 85px 0;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(3, 16, 45, 0.78), rgba(3, 16, 45, 0.78)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920")
+      center/cover no-repeat;
+}
+
+.himachal-cta h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 0 0 15px;
+}
+
+.himachal-cta p {
+  color: #eee;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .himachal-destination-grid,
+  .himachal-package-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .himachal-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .himachal-enquiry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .himachal-section {
+    padding: 60px 0;
+  }
+
+  .himachal-hero {
+    min-height: 560px;
+  }
+
+  .himachal-about-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .himachal-about-image {
+    height: 330px;
+  }
+
+  .himachal-destination-grid,
+  .himachal-package-grid,
+  .himachal-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .himachal-enquiry-form {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .himachal-container {
+    width: 92%;
+  }
+
+  .himachal-hero {
+    min-height: 520px;
+  }
+
+  .himachal-hero-content {
+    padding: 65px 0;
+  }
+
+  .himachal-hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .himachal-why-grid,
+  .himachal-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .himachal-form-full {
+    grid-column: auto;
+  }
+}

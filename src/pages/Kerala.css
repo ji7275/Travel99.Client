@@ -1,0 +1,880 @@
+/* =====================================
+   TRAVEL HIGH 99 - KERALA PAGE
+===================================== */
+
+.kerala-page {
+  --kerala-blue: #031057;
+  --kerala-dark: #102b4e;
+  --kerala-orange: #f59b32;
+  --kerala-light: #f5f7fc;
+  --kerala-text: #263248;
+  --kerala-muted: #687386;
+
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: var(--kerala-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kerala-page * {
+  box-sizing: border-box;
+}
+
+.kerala-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.kerala-section {
+  width: 100%;
+  padding: 85px 5%;
+}
+
+.kerala-tag {
+  display: inline-block;
+  color: var(--kerala-orange);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.kerala-heading {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.kerala-heading h2 {
+  color: var(--kerala-blue);
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.25;
+  margin: 0 0 15px;
+}
+
+.kerala-heading p {
+  color: var(--kerala-muted);
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* BUTTONS */
+
+.kerala-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 49px;
+  padding: 14px 27px;
+  background: var(--kerala-orange);
+  color: #fff;
+  border: 2px solid var(--kerala-orange);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kerala-btn:hover {
+  background: var(--kerala-blue);
+  border-color: var(--kerala-blue);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.kerala-hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 16, 87, 0.91),
+      rgba(3, 16, 87, 0.65) 48%,
+      rgba(3, 16, 87, 0.08)
+    ),
+    url("/Images/Kerala/WELCOME.jpg") center/cover no-repeat;
+}
+
+.kerala-hero-content {
+  width: 100%;
+  max-width: 1250px;
+  padding: 100px 5%;
+  margin: auto;
+}
+
+.kerala-hero-content > span {
+  color: #ffbd67;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.kerala-hero-content h1 {
+  color: #fff;
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.12;
+  font-weight: 800;
+  margin: 22px 0;
+}
+
+.kerala-hero-content p {
+  max-width: 650px;
+  color: #f1f3fa;
+  font-size: 17px;
+  line-height: 1.85;
+  margin: 0 0 30px;
+}
+
+.kerala-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.kerala-btn-outline {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.kerala-btn-outline:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--kerala-blue);
+}
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.kerala-about {
+  background: #fff;
+}
+
+.kerala-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.kerala-about-image {
+  position: relative;
+  min-width: 0;
+}
+
+.kerala-about-image img {
+  display: block;
+  width: 100%;
+  height: 455px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(3, 16, 87, 0.13);
+}
+
+.kerala-image-label {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 23px;
+  background: #fff;
+  border-left: 4px solid var(--kerala-orange);
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.kerala-image-label strong {
+  color: var(--kerala-blue);
+  font-size: 20px;
+}
+
+.kerala-image-label span {
+  color: var(--kerala-muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.kerala-about-content h2 {
+  color: var(--kerala-blue);
+  font-size: clamp(29px, 3vw, 40px);
+  line-height: 1.3;
+  margin: 10px 0 20px;
+}
+
+.kerala-about-content p {
+  color: var(--kerala-muted);
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0 0 15px;
+}
+
+.kerala-about-content .kerala-btn {
+  margin-top: 12px;
+}
+
+/* =====================================
+   DESTINATIONS
+===================================== */
+
+.kerala-destinations {
+  background: var(--kerala-light);
+}
+
+.kerala-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.kerala-destination-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 5px 22px rgba(3, 16, 87, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.kerala-destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 32px rgba(3, 16, 87, 0.15);
+}
+
+.kerala-card-image {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.kerala-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.kerala-destination-card:hover .kerala-card-image img {
+  transform: scale(1.07);
+}
+
+.kerala-card-image span {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 7px 12px;
+  background: var(--kerala-orange);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.kerala-card-content {
+  padding: 22px;
+}
+
+.kerala-card-content h3 {
+  color: var(--kerala-blue);
+  font-size: 21px;
+  margin: 0 0 10px;
+}
+
+.kerala-card-content p {
+  min-height: 76px;
+  color: var(--kerala-muted);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+.kerala-card-content a {
+  color: var(--kerala-orange);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.kerala-card-content a:hover {
+  color: var(--kerala-blue);
+}
+
+/* =====================================
+   EXPERIENCES
+===================================== */
+
+.kerala-experiences {
+  background: #fff;
+}
+
+.kerala-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.kerala-experience-card {
+  padding: 30px 25px;
+  background: var(--kerala-light);
+  border-radius: 10px;
+  border-bottom: 4px solid var(--kerala-orange);
+  transition: all 0.3s ease;
+}
+
+.kerala-experience-card:hover {
+  background: var(--kerala-blue);
+  transform: translateY(-6px);
+}
+
+.kerala-experience-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background: #fff0dc;
+  border-radius: 50%;
+  font-size: 27px;
+}
+
+.kerala-experience-card h3 {
+  color: var(--kerala-blue);
+  font-size: 19px;
+  margin: 18px 0 10px;
+}
+
+.kerala-experience-card p {
+  color: var(--kerala-muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.kerala-experience-card:hover h3,
+.kerala-experience-card:hover p {
+  color: #fff;
+}
+
+/* =====================================
+   PACKAGES
+===================================== */
+
+.kerala-packages {
+  background: var(--kerala-light);
+}
+
+.kerala-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 27px;
+}
+
+.kerala-package-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 6px 25px rgba(3, 16, 87, 0.09);
+  transition: all 0.3s ease;
+}
+
+.kerala-package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(3, 16, 87, 0.15);
+}
+
+.kerala-package-image {
+  position: relative;
+  height: 245px;
+  overflow: hidden;
+}
+
+.kerala-package-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.kerala-package-card:hover .kerala-package-image img {
+  transform: scale(1.06);
+}
+
+.kerala-package-image span {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  padding: 9px 13px;
+  background: var(--kerala-orange);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.kerala-package-content {
+  padding: 25px;
+}
+
+.kerala-package-content h3 {
+  color: var(--kerala-blue);
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.kerala-package-content p {
+  min-height: 75px;
+  color: var(--kerala-muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 20px;
+}
+
+.kerala-package-content .kerala-btn {
+  width: 100%;
+}
+
+/* =====================================
+   WHY CHOOSE US
+===================================== */
+
+.kerala-why {
+  background: var(--kerala-blue);
+}
+
+.kerala-why .kerala-heading h2 {
+  color: #fff;
+}
+
+.kerala-why .kerala-heading p {
+  color: #dce4f8;
+}
+
+.kerala-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.kerala-why-card {
+  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.kerala-why-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.kerala-why-card > span {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.kerala-why-card h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.kerala-why-card p {
+  color: #dce4f8;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* =====================================
+   ENQUIRY
+===================================== */
+
+.kerala-enquiry {
+  background: #f4f6fb;
+}
+
+.kerala-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.kerala-enquiry-info {
+  padding-top: 12px;
+}
+
+.kerala-enquiry-info h2 {
+  color: var(--kerala-blue);
+  font-size: clamp(29px, 3vw, 39px);
+  line-height: 1.3;
+  margin: 10px 0 18px;
+}
+
+.kerala-enquiry-info > p {
+  color: var(--kerala-muted);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.kerala-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(3, 16, 87, 0.05);
+}
+
+.kerala-contact-item > span {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background: #fff0dc;
+  color: var(--kerala-orange);
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.kerala-contact-item div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 6px;
+}
+
+.kerala-contact-item strong {
+  color: var(--kerala-blue);
+  font-size: 14px;
+}
+
+.kerala-contact-item a {
+  color: var(--kerala-muted);
+  font-size: 13px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.kerala-contact-item a:hover {
+  color: var(--kerala-orange);
+}
+
+.kerala-contact-item p {
+  color: var(--kerala-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* FORM */
+
+.kerala-enquiry-form {
+  width: 100%;
+  padding: 35px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(3, 16, 87, 0.1);
+}
+
+.kerala-enquiry-form h3 {
+  color: var(--kerala-blue);
+  font-size: 26px;
+  margin: 0 0 25px;
+}
+
+.kerala-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.kerala-form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.kerala-form-full {
+  grid-column: 1 / -1;
+}
+
+.kerala-form-group label {
+  color: var(--kerala-text);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.kerala-form-group input,
+.kerala-form-group select,
+.kerala-form-group textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 15px;
+  background: #fff;
+  color: var(--kerala-text);
+  border: 1px solid #dce1eb;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.kerala-form-group input,
+.kerala-form-group select {
+  min-height: 48px;
+}
+
+.kerala-form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.kerala-form-group input:focus,
+.kerala-form-group select:focus,
+.kerala-form-group textarea:focus {
+  border-color: var(--kerala-orange);
+  box-shadow: 0 0 0 3px rgba(245, 155, 50, 0.12);
+}
+
+.kerala-submit-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  margin-top: 22px;
+  background: var(--kerala-orange);
+  border: 2px solid var(--kerala-orange);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kerala-submit-btn:hover {
+  background: var(--kerala-blue);
+  border-color: var(--kerala-blue);
+}
+
+.kerala-form-note {
+  color: #8a93a2;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 14px 0 0;
+}
+
+/* =====================================
+   FINAL CTA
+===================================== */
+
+.kerala-cta {
+  padding: 75px 5%;
+  text-align: center;
+  background:
+    linear-gradient(rgba(3, 16, 87, 0.88), rgba(3, 16, 87, 0.88)),
+    url("/Images/kerala-cta.jpg") center/cover no-repeat;
+}
+
+.kerala-cta h2 {
+  color: #fff;
+  font-size: clamp(29px, 4vw, 42px);
+  margin: 0 0 15px;
+}
+
+.kerala-cta p {
+  max-width: 720px;
+  color: #eef1f9;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 auto 27px;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1024px) {
+  .kerala-destination-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kerala-why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kerala-about-grid {
+    gap: 35px;
+  }
+
+  .kerala-enquiry-grid {
+    gap: 30px;
+  }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+  .kerala-section {
+    padding: 60px 5%;
+  }
+
+  .kerala-hero {
+    min-height: 500px;
+    background-position: center;
+  }
+
+  .kerala-hero-content {
+    padding: 70px 5%;
+  }
+
+  .kerala-hero-content h1 {
+    font-size: 43px;
+  }
+
+  .kerala-hero-content p {
+    font-size: 15px;
+  }
+
+  .kerala-about-grid,
+  .kerala-enquiry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kerala-about-image img {
+    height: 350px;
+  }
+
+  .kerala-experience-grid,
+  .kerala-package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kerala-enquiry {
+    padding: 60px 5%;
+  }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 576px) {
+  .kerala-section {
+    padding: 48px 16px;
+  }
+
+  .kerala-hero {
+    min-height: 450px;
+  }
+
+  .kerala-hero-content {
+    padding: 55px 20px;
+  }
+
+  .kerala-hero-content > span {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .kerala-hero-content h1 {
+    font-size: 35px;
+  }
+
+  .kerala-hero-content p {
+    font-size: 14px;
+  }
+
+  .kerala-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kerala-hero-buttons .kerala-btn {
+    width: 100%;
+  }
+
+  .kerala-destination-grid,
+  .kerala-experience-grid,
+  .kerala-package-grid,
+  .kerala-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kerala-card-image,
+  .kerala-package-image {
+    height: 230px;
+  }
+
+  .kerala-card-content p,
+  .kerala-package-content p {
+    min-height: auto;
+  }
+
+  .kerala-about-image img {
+    height: 270px;
+  }
+
+  .kerala-image-label {
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .kerala-enquiry {
+    padding: 48px 16px;
+  }
+
+  .kerala-enquiry-form {
+    padding: 23px 17px;
+  }
+
+  .kerala-form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .kerala-form-full {
+    grid-column: auto;
+  }
+
+  .kerala-enquiry-form h3 {
+    font-size: 23px;
+  }
+
+  .kerala-cta {
+    padding: 55px 18px;
+  }
+}

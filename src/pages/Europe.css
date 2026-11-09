@@ -1,0 +1,739 @@
+.europe-page {
+  width: 100%;
+  overflow: hidden;
+  color: #263746;
+  font-family: Arial, sans-serif;
+}
+
+.europe-page * {
+  box-sizing: border-box;
+}
+
+.europe-padding {
+  padding: 85px 6%;
+}
+
+/* HERO */
+
+.europe-hero {
+  min-height: 610px;
+  background: url("/Images/Europe/European Highlights.jpg") center 50% / cover
+    no-repeat;
+}
+
+.europe-hero-overlay {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  padding: 65px 8%;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 24, 39, 0.88),
+    rgba(8, 24, 39, 0.45),
+    rgba(8, 24, 39, 0.08)
+  );
+}
+
+.europe-hero-content {
+  max-width: 720px;
+  color: white;
+}
+
+.europe-tag {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.europe-hero-content h1 {
+  font-size: clamp(38px, 5.3vw, 66px);
+  line-height: 1.13;
+  margin: 0 0 20px;
+  font-weight: 800;
+}
+
+.europe-hero-content > p {
+  max-width: 590px;
+  color: #f0f0f0;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.europe-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.europe-btn,
+.europe-outline-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.europe-btn {
+  background: #f5a623;
+  color: white;
+}
+
+.europe-btn:hover {
+  background: #f5a623;
+  transform: translateY(-3px);
+}
+
+.europe-outline-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+.europe-outline-btn:hover {
+  background: white;
+  color: #263746;
+}
+
+.europe-hero-stats {
+  display: flex;
+  gap: 55px;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+.europe-hero-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.europe-hero-stats strong {
+  font-size: 27px;
+}
+
+.europe-hero-stats span {
+  color: #eee;
+  font-size: 12px;
+}
+
+/* ABOUT */
+
+.europe-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.europe-about-image {
+  position: relative;
+  height: 470px;
+}
+
+.europe-about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.europe-about-label {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: white;
+  padding: 18px 25px;
+  border-left: 4px solid #f5a623;
+  border-radius: 4px;
+}
+
+.europe-about-label strong {
+  font-size: 19px;
+}
+
+.europe-about-label span {
+  font-size: 13px;
+  color: #777;
+}
+
+.europe-subtitle {
+  display: inline-block;
+  color: #f5a623;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.europe-about-content h2,
+.europe-section-heading h2,
+.europe-season-content h2,
+.europe-highlights-heading h2 {
+  color: #1b303e;
+  font-size: clamp(28px, 3.5vw, 40px);
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.europe-about-content p {
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.europe-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin: 25px 0;
+}
+
+.europe-features div {
+  font-size: 14px;
+  font-weight: 600;
+  color: #384c59;
+}
+
+.europe-read-more {
+  color: #f5a623;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* SECTION HEADING */
+
+.europe-section-heading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.europe-section-heading p {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* DESTINATIONS */
+
+.europe-destinations,
+.europe-packages {
+  background: #f6f8fa;
+}
+
+.europe-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.europe-destination-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.europe-destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+.europe-destination-image {
+  height: 245px;
+  position: relative;
+  overflow: hidden;
+}
+
+.europe-destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.europe-destination-card:hover img {
+  transform: scale(1.07);
+}
+
+.europe-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #f5a623;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.europe-destination-content {
+  padding: 23px;
+}
+
+.europe-destination-content > span {
+  color: #f5a623;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.europe-destination-content h3 {
+  font-size: 23px;
+  color: #1b303e;
+  margin: 9px 0;
+}
+
+.europe-destination-content p {
+  color: #777;
+  line-height: 1.7;
+  font-size: 14px;
+  min-height: 70px;
+}
+
+.europe-destination-content a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #f5a623;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* EXPERIENCE */
+
+.europe-experience {
+  background: url("/Images/Europe/Explore Europe.jpg") center / cover no-repeat;
+}
+
+.europe-experience-overlay {
+  background: rgba(8, 24, 39, 0.76);
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.europe-experience-overlay h2 {
+  max-width: 800px;
+  margin: 10px auto 15px;
+  font-size: clamp(30px, 4vw, 46px);
+}
+
+.europe-experience-overlay p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  color: #eee;
+}
+
+.europe-experience-overlay .europe-subtitle {
+  color: #f5a623;
+}
+
+/* ATTRACTIONS */
+
+.europe-attraction-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.europe-attraction-card {
+  position: relative;
+  height: 370px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.europe-attraction-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.europe-attraction-card:hover img {
+  transform: scale(1.08);
+}
+
+.europe-attraction-card > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 65px 22px 23px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+.europe-attraction-card span {
+  color: #f5a623;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.europe-attraction-card h3 {
+  font-size: 22px;
+  margin: 9px 0;
+}
+
+.europe-attraction-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* PACKAGES */
+
+.europe-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.europe-package-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.europe-package-card:hover {
+  transform: translateY(-7px);
+}
+
+.europe-package-image {
+  height: 240px;
+  position: relative;
+}
+
+.europe-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.europe-package-image span {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #f5a623;
+  color: white;
+  padding: 9px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.europe-package-content {
+  padding: 23px;
+}
+
+.europe-package-content h3 {
+  color: #1b303e;
+  font-size: 21px;
+  margin: 0 0 10px;
+}
+
+.europe-package-content > p {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.europe-package-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+
+.europe-package-bottom > div {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.europe-package-bottom small {
+  color: #888;
+  font-size: 11px;
+}
+
+.europe-package-bottom strong {
+  color: #f5a623;
+  font-size: 20px;
+}
+
+.europe-package-bottom a {
+  padding: 12px 16px;
+  background: #1b303e;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.europe-package-bottom a:hover {
+  background: #f5a623;
+}
+
+/* HIGHLIGHTS */
+
+.europe-highlights-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.europe-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.europe-highlights-grid > div {
+  background: #f6f8fa;
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.europe-highlights-grid > div:hover {
+  transform: translateY(-6px);
+  background: #1b303e;
+  color: white;
+}
+
+.europe-highlights-grid span {
+  font-size: 38px;
+}
+
+.europe-highlights-grid h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.europe-highlights-grid p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #777;
+  margin: 0;
+}
+
+.europe-highlights-grid > div:hover p {
+  color: #eee;
+}
+
+/* SEASONS */
+
+.europe-season {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.europe-season-content p {
+  color: #777;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.europe-season-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.europe-season-grid > div {
+  background: #f6f8fa;
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.europe-season-grid > div:hover {
+  background: #e63946;
+  color: white;
+}
+
+.europe-season-grid span {
+  font-size: 35px;
+}
+
+.europe-season-grid h3 {
+  margin: 12px 0 7px;
+}
+
+.europe-season-grid p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.europe-season-grid > div:hover p {
+  color: white;
+}
+
+/* CTA */
+
+.europe-cta {
+  background:
+    linear-gradient(90deg, rgba(8, 24, 39, 0.88), rgba(8, 24, 39, 0.65)),
+    url("/Images/Europe/European Highlights.jpg") center / cover no-repeat;
+  padding: 85px 7%;
+  color: white;
+  text-align: center;
+}
+
+.europe-cta-content > span {
+  color: #ffb6b6;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.europe-cta h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  margin: 17px 0;
+}
+
+.europe-cta p {
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+.europe-cta a {
+  display: inline-block;
+  padding: 15px 28px;
+  background: #f5a623;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.europe-cta a:hover {
+  background: #f5a623;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .europe-destination-grid,
+  .europe-package-grid,
+  .europe-attraction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .europe-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .europe-about {
+    gap: 35px;
+  }
+
+  .europe-season {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .europe-padding {
+    padding: 55px 5%;
+  }
+
+  .europe-hero,
+  .europe-hero-overlay {
+    min-height: 570px;
+  }
+
+  .europe-hero-overlay {
+    padding: 50px 6%;
+  }
+
+  .europe-hero-content h1 {
+    font-size: 39px;
+  }
+
+  .europe-hero-content > p {
+    font-size: 14px;
+  }
+
+  .europe-hero-stats {
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .europe-hero-stats strong {
+    font-size: 22px;
+  }
+
+  .europe-about {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .europe-about-image {
+    height: 320px;
+  }
+
+  .europe-features {
+    grid-template-columns: 1fr;
+  }
+
+  .europe-destination-grid,
+  .europe-package-grid,
+  .europe-attraction-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .europe-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .europe-destination-image {
+    height: 230px;
+  }
+
+  .europe-attraction-card {
+    height: 320px;
+  }
+
+  .europe-season-grid {
+    gap: 12px;
+  }
+
+  .europe-season-grid > div {
+    padding: 20px 8px;
+  }
+
+  .europe-package-bottom {
+    align-items: flex-start;
+  }
+
+  .europe-cta {
+    padding: 65px 5%;
+  }
+}

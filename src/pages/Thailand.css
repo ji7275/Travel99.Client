@@ -1,0 +1,1397 @@
+/* ==========================================
+   TRAVEL99 - THAILAND DESTINATION PAGE
+========================================== */
+
+.thailand-page {
+  --thai-orange: #f5a623;
+  --thai-orange-dark: #f5a623;
+  --thai-dark: #031057;
+  --thai-text: #65717b;
+  --thai-light: #fff7f2;
+  --thai-border: #eee6e0;
+
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: var(--thai-dark);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.thailand-page * {
+  box-sizing: border-box;
+}
+
+.thailand-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.thailand-section {
+  padding: 85px 0;
+}
+
+.thailand-small-heading {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: var(--thai-orange);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.thailand-section-title {
+  max-width: 730px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.thailand-section-title h2,
+.thailand-intro-text h2,
+.thailand-itinerary-content h2,
+.thailand-why-intro h2,
+.thailand-enquiry-intro h2 {
+  margin: 0 0 15px;
+  color: var(--thai-dark);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.thailand-section-title h2 span,
+.thailand-intro-text h2 span,
+.thailand-itinerary-content h2 span,
+.thailand-why-intro h2 span,
+.thailand-enquiry-intro h2 span {
+  color: var(--thai-orange);
+}
+
+.thailand-section-title p {
+  margin: 0;
+  color: var(--thai-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* HERO */
+
+.thailand-hero {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-image: url("/Images/Thailand/Thailand.jpg");
+  background-size: cover;
+  background-position: center 48%;
+}
+
+.thailand-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 25, 26, 0.84) 0%,
+    rgba(24, 25, 26, 0.58) 48%,
+    rgba(24, 25, 26, 0.12) 100%
+  );
+}
+
+.thailand-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+
+.thailand-hero-label {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 22px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.thailand-hero-label span {
+  width: 30px;
+  height: 2px;
+  background: var(--thai-orange);
+}
+
+.thailand-hero h1 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: clamp(45px, 6.5vw, 76px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.thailand-hero h1 span {
+  color: #f5a623;
+}
+
+.thailand-hero-content > p {
+  max-width: 560px;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.thailand-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.thailand-btn {
+  min-height: 48px;
+  padding: 0 23px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.thailand-btn span {
+  font-size: 19px;
+}
+
+.thailand-btn-orange {
+  color: #fff;
+  background: var(--thai-orange);
+  border: 1px solid var(--thai-orange);
+}
+
+.thailand-btn-orange:hover {
+  background: var(--thai-orange-dark);
+  border-color: var(--thai-orange-dark);
+  transform: translateY(-2px);
+}
+
+.thailand-btn-transparent {
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.thailand-btn-transparent:hover {
+  color: var(--thai-dark);
+  background: #fff;
+}
+
+.thailand-hero-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 55px;
+}
+
+.thailand-hero-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.thailand-hero-info strong {
+  color: #fff;
+  font-size: 24px;
+}
+
+.thailand-hero-info span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.thailand-hero-caption {
+  position: absolute;
+  right: 5%;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.thailand-hero-caption span:first-child {
+  color: #f5a623;
+  font-weight: 800;
+}
+
+.thailand-caption-line {
+  width: 55px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* INTRODUCTION */
+
+.thailand-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.thailand-intro-photo {
+  position: relative;
+  min-height: 440px;
+}
+
+.thailand-intro-photo > img {
+  width: 100%;
+  height: 440px;
+  display: block;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.thailand-photo-caption {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 17px 22px;
+  background: #fff;
+  border-left: 4px solid var(--thai-orange);
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.thailand-photo-caption span {
+  color: var(--thai-orange);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.thailand-photo-caption strong {
+  color: var(--thai-dark);
+  font-size: 16px;
+}
+
+.thailand-intro-text > p,
+.thailand-itinerary-content > p,
+.thailand-why-intro > p,
+.thailand-enquiry-intro > p {
+  margin: 0 0 14px;
+  color: var(--thai-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.thailand-intro-points {
+  display: grid;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.thailand-intro-points div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #031057;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.thailand-intro-points span {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  background: var(--thai-orange);
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.thailand-link-button {
+  padding: 0;
+  border: 0;
+  color: var(--thai-orange);
+  background: transparent;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.thailand-link-button span {
+  margin-left: 7px;
+  font-size: 18px;
+}
+
+/* EXPERIENCE STRIP */
+
+.thailand-experience-strip {
+  padding: 28px 0;
+  background: var(--thai-light);
+  border-top: 1px solid #f6e8df;
+  border-bottom: 1px solid #f6e8df;
+}
+
+.thailand-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.thailand-experience-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.thailand-experience-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.thailand-experience-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.thailand-experience-item strong {
+  font-size: 14px;
+}
+
+.thailand-experience-item small {
+  color: var(--thai-text);
+  font-size: 12px;
+}
+
+/* DESTINATIONS */
+
+.thailand-destinations {
+  background: #fff;
+}
+
+.thailand-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.thailand-destination-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--thai-border);
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+
+.thailand-destination-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 35px rgba(24, 35, 45, 0.1);
+}
+
+.thailand-destination-image {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thailand-destination-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.thailand-destination-card:hover .thailand-destination-image img {
+  transform: scale(1.07);
+}
+
+.thailand-destination-count {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 11px;
+  color: #fff;
+  background: var(--thai-orange);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.thailand-destination-content {
+  padding: 19px 17px 20px;
+}
+
+.thailand-destination-content > span {
+  color: var(--thai-orange);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.thailand-destination-content h3 {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.thailand-destination-content p {
+  min-height: 66px;
+  margin: 0 0 13px;
+  color: var(--thai-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.thailand-destination-content button {
+  padding: 0;
+  border: 0;
+  color: var(--thai-orange);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.thailand-destination-content button span {
+  margin-left: 5px;
+}
+
+/* PACKAGES */
+
+.thailand-packages {
+  background: #fff7f2;
+}
+
+.thailand-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.thailand-package-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f0e6df;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.thailand-package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(24, 35, 45, 0.1);
+}
+
+.thailand-package-photo {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thailand-package-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.thailand-package-card:hover .thailand-package-photo img {
+  transform: scale(1.06);
+}
+
+.thailand-package-photo > span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 8px 13px;
+  color: #fff;
+  background: var(--thai-orange);
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.thailand-package-details {
+  padding: 22px;
+}
+
+.thailand-package-duration {
+  color: var(--thai-orange);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.thailand-package-details h3 {
+  margin: 12px 0 9px;
+  font-size: 20px;
+}
+
+.thailand-package-details > p {
+  min-height: 66px;
+  margin: 0 0 20px;
+  color: var(--thai-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.thailand-package-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 17px;
+  border-top: 1px solid var(--thai-border);
+}
+
+.thailand-package-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.thailand-package-footer small {
+  color: #031057;
+  font-size: 11px;
+}
+
+.thailand-package-footer strong {
+  color: var(--thai-orange);
+  font-size: 23px;
+}
+
+.thailand-package-footer button {
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--thai-orange);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.thailand-package-footer button:hover {
+  background: var(--thai-orange-dark);
+}
+
+.thailand-price-disclaimer {
+  margin: 22px 0 0;
+  color: #7c858d;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ACTIVITIES */
+
+.thailand-activities {
+  background: #fff;
+}
+
+.thailand-activity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.thailand-activity-card {
+  min-height: 190px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid var(--thai-border);
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+
+.thailand-activity-card:hover {
+  border-color: var(--thai-orange);
+  box-shadow: 0 10px 28px rgba(24, 35, 45, 0.07);
+  transform: translateY(-5px);
+}
+
+.thailand-activity-card > span {
+  color: var(--thai-orange);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.thailand-activity-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.thailand-activity-card p {
+  margin: 0;
+  color: var(--thai-text);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ITINERARY */
+
+.thailand-itinerary {
+  background: #fff7f2;
+}
+
+.thailand-itinerary-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.thailand-day-list {
+  display: grid;
+  gap: 0;
+  margin: 27px 0 30px;
+}
+
+.thailand-day-item {
+  position: relative;
+  display: flex;
+  gap: 17px;
+  padding-bottom: 22px;
+}
+
+.thailand-day-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  bottom: 0;
+  left: 18px;
+  width: 1px;
+  background: #f2c9b8;
+}
+
+.thailand-day-item > span {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--thai-orange);
+  background: #ffece2;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.thailand-day-item h3 {
+  margin: 2px 0 5px;
+  font-size: 15px;
+}
+
+.thailand-day-item p {
+  margin: 0;
+  color: var(--thai-text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.thailand-itinerary-photo {
+  position: relative;
+}
+
+.thailand-itinerary-photo > img {
+  width: 100%;
+  height: 570px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.thailand-itinerary-badge {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 18px 20px;
+  background: #fff;
+  border-left: 4px solid var(--thai-orange);
+  border-radius: 5px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.thailand-itinerary-badge strong {
+  font-size: 15px;
+}
+
+.thailand-itinerary-badge span {
+  color: var(--thai-text);
+  font-size: 12px;
+}
+
+/* GALLERY */
+
+.thailand-gallery {
+  background: #fff;
+}
+
+.thailand-gallery-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  gap: 14px;
+}
+
+.thailand-gallery-item {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.thailand-gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.thailand-gallery-item:hover img {
+  transform: scale(1.07);
+}
+
+.thailand-gallery-1 {
+  grid-row: span 2;
+}
+
+.thailand-gallery-4 {
+  grid-column: span 2;
+}
+
+/* WHY TRAVEL99 */
+
+.thailand-why {
+  padding: 75px 0;
+  color: #fff;
+  background: #031057;
+}
+
+.thailand-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.thailand-why-intro h2 {
+  color: #fff;
+}
+
+.thailand-why-intro > p {
+  margin-bottom: 25px;
+  color: #c5cdd3;
+}
+
+.thailand-why-list {
+  display: grid;
+  gap: 22px;
+}
+
+.thailand-why-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.thailand-why-list > div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.thailand-why-list > div > span {
+  color: #f5a623;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.thailand-why-list h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.thailand-why-list p {
+  margin: 0;
+  color: #c5cdd3;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ENQUIRY */
+
+.thailand-enquiry {
+  background: #fff;
+}
+
+.thailand-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+  gap: 60px;
+}
+
+.thailand-enquiry-intro {
+  padding-top: 20px;
+}
+
+.thailand-contact-info {
+  display: grid;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.thailand-contact-info > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.thailand-contact-info > div > span {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--thai-orange);
+  background: #fff0e8;
+  border-radius: 50%;
+  font-size: 19px;
+}
+
+.thailand-contact-info section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.thailand-contact-info small {
+  color: var(--thai-text);
+  font-size: 12px;
+}
+
+.thailand-contact-info strong {
+  color: var(--thai-dark);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.thailand-enquiry-form {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid var(--thai-border);
+  border-radius: 9px;
+  box-shadow: 0 12px 40px rgba(28, 39, 48, 0.07);
+}
+
+.thailand-enquiry-form h3 {
+  margin: 0 0 7px;
+  font-size: 23px;
+}
+
+.thailand-enquiry-form > p {
+  margin: 0 0 24px;
+  color: var(--thai-text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.thailand-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.thailand-form-group {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 17px;
+}
+
+.thailand-form-group label {
+  color: #031057;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.thailand-form-group input,
+.thailand-form-group select,
+.thailand-form-group textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #e5e8eb;
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  color: var(--thai-dark);
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s ease;
+}
+
+.thailand-form-group input,
+.thailand-form-group select {
+  height: 45px;
+}
+
+.thailand-form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.thailand-form-group input:focus,
+.thailand-form-group select:focus,
+.thailand-form-group textarea:focus {
+  border-color: var(--thai-orange);
+}
+
+.thailand-submit-button {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--thai-orange);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.thailand-submit-button:hover {
+  background: var(--thai-orange-dark);
+}
+
+.thailand-submit-button span {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.thailand-form-note {
+  display: block;
+  margin-top: 12px;
+  color: #89939b;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.thailand-success {
+  margin-bottom: 18px;
+  padding: 12px;
+  color: #237344;
+  background: #eaf8ef;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* FINAL CTA */
+
+.thailand-final-cta {
+  padding: 65px 0;
+  color: #fff;
+  text-align: center;
+  background:
+    linear-gradient(rgba(4, 44, 152, 0.82), rgba(17, 17, 173, 0.82)),
+    url("/Images/Thailand/Thailand-CTA.jpg") center / cover;
+}
+
+.thailand-final-cta > .thailand-container > span {
+  color: #f5a623;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.thailand-final-cta h2 {
+  margin: 14px 0;
+  color: #fff;
+  font-size: clamp(27px, 4vw, 40px);
+}
+
+.thailand-final-cta p {
+  margin: 0 0 25px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.thailand-btn-white {
+  color: var(--thai-orange);
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.thailand-btn-white:hover {
+  color: #fff;
+  background: var(--thai-orange);
+  border-color: var(--thai-orange);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .thailand-section {
+    padding: 70px 0;
+  }
+
+  .thailand-intro-grid,
+  .thailand-itinerary-grid {
+    gap: 35px;
+  }
+
+  .thailand-destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .thailand-experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+
+  .thailand-activity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .thailand-why-grid,
+  .thailand-enquiry-grid {
+    gap: 35px;
+  }
+
+  .thailand-hero {
+    min-height: 590px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .thailand-container {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .thailand-section {
+    padding: 55px 0;
+  }
+
+  .thailand-hero {
+    min-height: 620px;
+    background-position: 58% center;
+  }
+
+  .thailand-hero-shade {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 37, 140, 0.84),
+      rgba(24, 25, 26, 0.48)
+    );
+  }
+
+  .thailand-hero-content {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .thailand-hero-label {
+    font-size: 10px;
+    letter-spacing: 1.3px;
+  }
+
+  .thailand-hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -1px;
+  }
+
+  .thailand-hero-content > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .thailand-hero-actions {
+    max-width: 260px;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .thailand-btn {
+    width: 100%;
+  }
+
+  .thailand-hero-info {
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .thailand-hero-info strong {
+    font-size: 20px;
+  }
+
+  .thailand-hero-info span {
+    font-size: 10px;
+  }
+
+  .thailand-hero-caption {
+    right: 17px;
+    bottom: 20px;
+  }
+
+  .thailand-section-title {
+    margin-bottom: 30px;
+  }
+
+  .thailand-section-title h2,
+  .thailand-intro-text h2,
+  .thailand-itinerary-content h2,
+  .thailand-why-intro h2,
+  .thailand-enquiry-intro h2 {
+    font-size: 29px;
+  }
+
+  .thailand-section-title p {
+    font-size: 13px;
+  }
+
+  .thailand-intro-grid,
+  .thailand-itinerary-grid,
+  .thailand-why-grid,
+  .thailand-enquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .thailand-intro-photo,
+  .thailand-intro-photo > img {
+    min-height: 300px;
+    height: 300px;
+  }
+
+  .thailand-intro-text > p,
+  .thailand-itinerary-content > p,
+  .thailand-why-intro > p,
+  .thailand-enquiry-intro > p {
+    font-size: 13px;
+  }
+
+  .thailand-experience-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+  }
+
+  .thailand-experience-item {
+    justify-content: flex-start;
+    gap: 9px;
+  }
+
+  .thailand-experience-icon {
+    width: 39px;
+    height: 39px;
+    font-size: 18px;
+  }
+
+  .thailand-experience-item strong {
+    font-size: 11px;
+  }
+
+  .thailand-experience-item small {
+    font-size: 10px;
+  }
+
+  .thailand-destination-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+  }
+
+  .thailand-destination-image {
+    height: 145px;
+  }
+
+  .thailand-destination-content {
+    padding: 14px 12px;
+  }
+
+  .thailand-destination-content h3 {
+    font-size: 14px;
+  }
+
+  .thailand-destination-content p {
+    min-height: 75px;
+    font-size: 11px;
+  }
+
+  .thailand-destination-content button {
+    font-size: 11px;
+  }
+
+  .thailand-package-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .thailand-package-photo {
+    height: 220px;
+  }
+
+  .thailand-package-details {
+    padding: 18px;
+  }
+
+  .thailand-package-details h3 {
+    font-size: 18px;
+  }
+
+  .thailand-package-details > p {
+    min-height: 0;
+  }
+
+  .thailand-package-footer strong {
+    font-size: 21px;
+  }
+
+  .thailand-activity-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .thailand-activity-card {
+    min-height: 165px;
+    padding: 17px 14px;
+  }
+
+  .thailand-activity-card h3 {
+    font-size: 14px;
+  }
+
+  .thailand-activity-card p {
+    font-size: 11px;
+  }
+
+  .thailand-itinerary-photo > img {
+    height: 350px;
+  }
+
+  .thailand-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 170px 145px 145px;
+    gap: 9px;
+  }
+
+  .thailand-gallery-1 {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .thailand-gallery-4 {
+    grid-column: span 2;
+  }
+
+  .thailand-why {
+    padding: 55px 0;
+  }
+
+  .thailand-enquiry-form {
+    padding: 22px 16px;
+  }
+
+  .thailand-enquiry-form h3 {
+    font-size: 20px;
+  }
+
+  .thailand-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .thailand-final-cta {
+    padding: 52px 0;
+  }
+
+  .thailand-final-cta h2 {
+    font-size: 27px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .thailand-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .thailand-hero {
+    min-height: 650px;
+  }
+
+  .thailand-hero-info {
+    gap: 13px;
+  }
+
+  .thailand-hero-info strong {
+    font-size: 18px;
+  }
+
+  .thailand-destination-grid,
+  .thailand-activity-grid,
+  .thailand-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thailand-destination-image {
+    height: 190px;
+  }
+
+  .thailand-destination-content p {
+    min-height: auto;
+  }
+
+  .thailand-gallery-grid {
+    grid-template-rows: 155px 125px 125px 125px;
+  }
+
+  .thailand-gallery-1,
+  .thailand-gallery-4 {
+    grid-column: span 2;
+  }
+}

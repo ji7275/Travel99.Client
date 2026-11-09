@@ -1,0 +1,255 @@
+.service-form-section {
+  padding: 85px 5%;
+  background: #f5f7fa;
+  scroll-margin-top: 100px;
+}
+
+.service-form-section:nth-child(even) {
+  background: #ffffff;
+}
+
+.service-form-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.service-form-info {
+  padding: 20px 0;
+}
+
+.service-form-eyebrow,
+.service-form-heading > span {
+  color: #f47721;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.service-form-icon {
+  width: 75px;
+  height: 75px;
+  margin: 25px 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff0e5;
+  border-radius: 18px;
+  font-size: 35px;
+}
+
+.service-form-info h2 {
+  margin: 0 0 15px;
+  color: #17263d;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.15;
+}
+
+.service-form-info > p {
+  max-width: 440px;
+  color: #697586;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.service-form-points {
+  display: grid;
+  gap: 15px;
+  margin-top: 30px;
+  color: #344054;
+  font-size: 14px;
+}
+
+.service-form-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-form-points span {
+  width: 23px;
+  height: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f7ed;
+  color: #16834a;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.service-contact-box {
+  margin-top: 35px;
+  padding: 20px;
+  background: #17263d;
+  border-radius: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.service-contact-box small {
+  color: #ffb47e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.service-contact-box a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.service-enquiry-form {
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #e9edf2;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(23, 38, 61, 0.07);
+}
+
+.service-form-heading {
+  margin-bottom: 25px;
+}
+
+.service-form-heading h3 {
+  margin: 9px 0;
+  color: #17263d;
+  font-size: 25px;
+}
+
+.service-form-heading p {
+  margin: 0;
+  color: #7b8492;
+  font-size: 13px;
+}
+
+.service-fields-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-fields-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.service-fields-grid input,
+.service-fields-grid select,
+.service-fields-grid textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid #dfe4eb;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #17263d;
+  font-family: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.service-fields-grid input:focus,
+.service-fields-grid select:focus,
+.service-fields-grid textarea:focus {
+  border-color: #f47721;
+  box-shadow: 0 0 0 3px rgba(244, 119, 33, 0.1);
+}
+
+.service-fields-grid input::placeholder,
+.service-fields-grid textarea::placeholder {
+  color: #a0a8b4;
+}
+
+.service-field-full {
+  grid-column: 1 / -1;
+}
+
+.service-fields-grid textarea {
+  resize: vertical;
+}
+
+.service-enquiry-form > button {
+  margin-top: 22px;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #f47721;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.service-enquiry-form > button:hover {
+  background: #dc6415;
+  transform: translateY(-2px);
+}
+
+.service-enquiry-form > button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.service-form-message {
+  margin: 15px 0 0;
+  color: #16834a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .service-form-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .service-form-info {
+    padding-bottom: 0;
+  }
+
+  .service-contact-box {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-form-section {
+    padding: 55px 18px;
+    scroll-margin-top: 80px;
+  }
+
+  .service-enquiry-form {
+    padding: 22px 17px;
+  }
+
+  .service-fields-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-field-full {
+    grid-column: auto;
+  }
+
+  .service-form-heading h3 {
+    font-size: 21px;
+  }
+}

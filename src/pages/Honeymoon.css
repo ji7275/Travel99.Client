@@ -1,0 +1,781 @@
+/* =====================================
+   HONEYMOON PAGE - TRAVEL99
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.honeymoon-page {
+  width: 100%;
+  overflow: hidden;
+  color: #031057;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.honeymoon-page img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.honeymoon-page a {
+  transition: all 0.3s ease;
+}
+
+.section-padding {
+  padding: 80px 6%;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.honeymoon-hero {
+  width: 100%;
+  min-height: 600px;
+  background:
+    linear-gradient(90deg, rgba(25, 17, 30, 0.75), rgba(25, 17, 30, 0.12)),
+    url("/Images/Honeymoon/Honeymoon.jpg") center center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.honeymoon-hero-overlay {
+  width: 100%;
+  padding: 90px 8%;
+}
+
+.honeymoon-hero-content {
+  max-width: 720px;
+  color: #ffffff;
+}
+
+.honeymoon-tag {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.honeymoon-hero h1 {
+  font-size: clamp(38px, 5.5vw, 68px);
+  line-height: 1.15;
+  font-weight: 800;
+  margin: 0 0 22px;
+}
+
+.honeymoon-hero h1 span {
+  color: #f2b53b;
+}
+
+.honeymoon-hero p {
+  max-width: 590px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #f5eeee;
+  margin-bottom: 30px;
+}
+
+.honeymoon-btn {
+  display: inline-block;
+  background: #f5a623;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 28px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #f5a623;
+}
+
+.honeymoon-btn:hover {
+  background: #f5a623;
+  border-color: #f5a623;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* =====================================
+   INTRO SECTION
+===================================== */
+
+.honeymoon-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+  background: #ffffff;
+}
+
+.honeymoon-intro-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.honeymoon-intro-image img {
+  height: 450px;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.honeymoon-intro-image:hover img {
+  transform: scale(1.04);
+}
+
+.section-subtitle {
+  display: inline-block;
+  color: #f5a623;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.honeymoon-intro-content h2 {
+  font-size: clamp(29px, 3.5vw, 43px);
+  line-height: 1.3;
+  font-weight: 800;
+  margin: 15px 0 20px;
+  color: #252525;
+}
+
+.honeymoon-intro-content h2 span {
+  color: #f5a623;
+}
+
+.honeymoon-intro-content p {
+  color: #6e6e6e;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.honeymoon-outline-btn {
+  display: inline-block;
+  margin-top: 12px;
+  border: 2px solid #f5a623;
+  color: #f5a623;
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.honeymoon-outline-btn:hover {
+  background: #f5a623;
+  color: #ffffff;
+}
+
+/* =====================================
+   COMMON SECTION HEADING
+===================================== */
+
+.honeymoon-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.honeymoon-heading h2 {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  color: #031057;
+  margin: 12px 0;
+}
+
+.honeymoon-heading p {
+  color: #777777;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* =====================================
+   DESTINATION SECTION
+===================================== */
+
+.honeymoon-destinations {
+  background: #fff7f9;
+}
+
+.honeymoon-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 27px;
+}
+
+.honeymoon-destination-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+}
+
+.honeymoon-destination-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+.honeymoon-destination-image {
+  width: 100%;
+  height: 245px;
+  position: relative;
+  overflow: hidden;
+}
+
+.honeymoon-destination-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.honeymoon-destination-card:hover .honeymoon-destination-image img {
+  transform: scale(1.08);
+}
+
+.honeymoon-heart {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #f5a623;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.honeymoon-destination-info {
+  padding: 21px;
+}
+
+.honeymoon-destination-info h3 {
+  color: #031057;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 9px;
+}
+
+.honeymoon-destination-info p {
+  color: #777777;
+  font-size: 14px;
+  margin: 0 0 19px;
+}
+
+.honeymoon-card-bottom {
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.honeymoon-card-bottom strong {
+  color: #f5a623;
+  font-size: 14px;
+}
+
+.honeymoon-card-bottom a {
+  color: #031057;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.honeymoon-card-bottom a:hover {
+  color: #f5a623;
+}
+
+/* =====================================
+   ROMANTIC EXPERIENCES
+===================================== */
+
+.honeymoon-experiences {
+  background: #ffffff;
+}
+
+.honeymoon-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.honeymoon-experience-card {
+  text-align: center;
+  padding: 35px 22px;
+  background: #ffffff;
+  border: 1px solid #f1e2e7;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.honeymoon-experience-card:hover {
+  background: #fff5f7;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.experience-icon {
+  font-size: 43px;
+  margin-bottom: 15px;
+}
+
+.honeymoon-experience-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #031057;
+}
+
+.honeymoon-experience-card p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* =====================================
+   FEATURE BANNER
+===================================== */
+
+.honeymoon-banner {
+  width: 100%;
+  min-height: 400px;
+  background:
+    linear-gradient(rgba(31, 17, 26, 0.68), rgba(31, 17, 26, 0.68)),
+    url("/Images/Honeymoon/Honeymoon.jpg") center center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.honeymoon-banner-overlay {
+  max-width: 850px;
+  color: #ffffff;
+}
+
+.honeymoon-banner-overlay > span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.honeymoon-banner h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+  margin: 20px 0;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.honeymoon-banner p {
+  color: #f1e9ec;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* =====================================
+   HONEYMOON PACKAGES
+===================================== */
+
+.honeymoon-packages {
+  background: #fff7f9;
+}
+
+.honeymoon-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.honeymoon-package-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.35s ease;
+}
+
+.honeymoon-package-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.honeymoon-package-card > img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.honeymoon-package-card:hover > img {
+  transform: scale(1.04);
+}
+
+.honeymoon-package-info {
+  padding: 23px;
+}
+
+.honeymoon-package-info > span {
+  color: #f5a623;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.honeymoon-package-info h3 {
+  color: #031057;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.honeymoon-package-info p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.8;
+  min-height: 50px;
+  margin: 0;
+}
+
+.package-price {
+  margin: 20px 0;
+}
+
+.package-price strong {
+  color: #f5a623;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.package-price small {
+  color: #777777;
+  font-size: 13px;
+}
+
+.honeymoon-package-info > a {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  border-radius: 5px;
+  background: #f5a623;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.honeymoon-package-info > a:hover {
+  background: #f5a623;
+}
+
+.honeymoon-price-note {
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 25px auto 0;
+  max-width: 900px;
+}
+
+/* =====================================
+   WHY CHOOSE TRAVEL99
+===================================== */
+
+.honeymoon-why {
+  background: #ffffff;
+}
+
+.honeymoon-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.honeymoon-why-grid > div {
+  text-align: center;
+  padding: 28px 18px;
+  border-radius: 10px;
+  background: #fff8fa;
+  transition: all 0.3s ease;
+}
+
+.honeymoon-why-grid > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+.honeymoon-why-grid span {
+  font-size: 40px;
+  display: inline-block;
+}
+
+.honeymoon-why-grid h3 {
+  color: #031057;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 15px 0 10px;
+}
+
+.honeymoon-why-grid p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+.honeymoon-contact {
+  width: 100%;
+  background:
+    linear-gradient(rgba(34, 18, 27, 0.78), rgba(34, 18, 27, 0.78)),
+    url("/Images/Honeymoon/Honeymoon.jpg") center center / cover no-repeat;
+
+  padding: 85px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.honeymoon-contact-content {
+  max-width: 760px;
+  margin: auto;
+}
+
+.honeymoon-contact-content > span {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.honeymoon-contact h2 {
+  font-size: clamp(30px, 4vw, 45px);
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 18px 0;
+  color: #ffffff;
+}
+
+.honeymoon-contact p {
+  color: #f1e9ec;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.honeymoon-email-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.honeymoon-email-link:hover {
+  color: #f4dd8a;
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+  .section-padding {
+    padding: 70px 5%;
+  }
+
+  .honeymoon-intro {
+    gap: 35px;
+  }
+
+  .honeymoon-destination-grid,
+  .honeymoon-package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .honeymoon-experience-grid,
+  .honeymoon-why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .honeymoon-intro-image img {
+    height: 380px;
+  }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 5%;
+  }
+
+  .honeymoon-hero {
+    min-height: 500px;
+    background-position: center;
+  }
+
+  .honeymoon-hero-overlay {
+    padding: 65px 6%;
+  }
+
+  .honeymoon-hero h1 {
+    font-size: 43px;
+  }
+
+  .honeymoon-hero p {
+    font-size: 15px;
+  }
+
+  .honeymoon-intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .honeymoon-intro-image img {
+    height: 330px;
+  }
+
+  .honeymoon-destination-grid,
+  .honeymoon-package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+  }
+
+  .honeymoon-destination-image {
+    height: 190px;
+  }
+
+  .honeymoon-package-card > img {
+    height: 190px;
+  }
+
+  .honeymoon-destination-info,
+  .honeymoon-package-info {
+    padding: 16px;
+  }
+
+  .honeymoon-destination-info h3 {
+    font-size: 19px;
+  }
+
+  .honeymoon-card-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .honeymoon-package-info h3 {
+    font-size: 18px;
+  }
+
+  .package-price strong {
+    font-size: 21px;
+  }
+
+  .honeymoon-banner {
+    min-height: 350px;
+  }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 520px) {
+  .section-padding {
+    padding: 50px 5%;
+  }
+
+  .honeymoon-hero {
+    min-height: 460px;
+  }
+
+  .honeymoon-hero-overlay {
+    padding: 55px 6%;
+  }
+
+  .honeymoon-hero h1 {
+    font-size: 36px;
+  }
+
+  .honeymoon-hero p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .honeymoon-tag {
+    font-size: 11px;
+  }
+
+  .honeymoon-btn {
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+
+  .honeymoon-intro-image img {
+    height: 260px;
+  }
+
+  .honeymoon-intro-content h2 {
+    font-size: 30px;
+  }
+
+  .honeymoon-heading h2 {
+    font-size: 28px;
+  }
+
+  .honeymoon-destination-grid,
+  .honeymoon-package-grid,
+  .honeymoon-experience-grid,
+  .honeymoon-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .honeymoon-destination-image {
+    height: 230px;
+  }
+
+  .honeymoon-package-card > img {
+    height: 230px;
+  }
+
+  .honeymoon-experience-card {
+    padding: 28px 20px;
+  }
+
+  .honeymoon-banner {
+    min-height: 330px;
+    padding: 50px 18px;
+  }
+
+  .honeymoon-banner h2 {
+    font-size: 29px;
+  }
+
+  .honeymoon-contact {
+    padding: 60px 18px;
+  }
+
+  .honeymoon-contact h2 {
+    font-size: 30px;
+  }
+}

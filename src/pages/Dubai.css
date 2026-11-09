@@ -1,0 +1,621 @@
+.dubai-page {
+  width: 100%;
+  overflow: hidden;
+  color: #263449;
+  font-family: Arial, sans-serif;
+}
+
+.dubai-container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.dubai-section {
+  padding: 85px 0;
+}
+
+/* HERO */
+
+.dubai-hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(3, 16, 45, 0.82), rgba(3, 16, 45, 0.15)),
+    url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920")
+      center/cover no-repeat;
+}
+
+.dubai-hero-content {
+  max-width: 700px;
+  color: #fff;
+  padding: 90px 0;
+}
+
+.dubai-hero-tag,
+.dubai-tag {
+  display: inline-block;
+  color: #f59b32;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.dubai-hero h1 {
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 1.12;
+  margin: 0 0 22px;
+  color: #fff;
+}
+
+.dubai-hero h1 span {
+  color: #ffae48;
+}
+
+.dubai-hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 600px;
+  color: #f3f3f3;
+  margin-bottom: 30px;
+}
+
+.dubai-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.dubai-btn,
+.dubai-btn-outline {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.dubai-btn {
+  background: #f59b32;
+  color: #fff;
+  border: 2px solid #f59b32;
+}
+
+.dubai-btn:hover {
+  background: #dc7f18;
+  border-color: #dc7f18;
+}
+
+.dubai-btn-outline {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.dubai-btn-outline:hover {
+  background: #fff;
+  color: #102b4e;
+}
+
+/* ABOUT */
+
+.dubai-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.dubai-about-image {
+  position: relative;
+  height: 460px;
+}
+
+.dubai-about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.dubai-image-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #f59b32;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.dubai-about-content h2,
+.dubai-heading h2,
+.dubai-enquiry-info h2 {
+  color: #102b4e;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.dubai-about-content h2 span {
+  color: #f59b32;
+}
+
+.dubai-about-content p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.dubai-about-content .dubai-btn {
+  margin-top: 10px;
+}
+
+/* SECTION HEADINGS */
+
+.dubai-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.dubai-heading h2 {
+  margin-bottom: 12px;
+}
+
+.dubai-heading p {
+  color: #697586;
+  line-height: 1.7;
+}
+
+/* DESTINATIONS */
+
+.dubai-destinations {
+  background: #f6f8fb;
+}
+
+.dubai-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dubai-destination-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.dubai-destination-card:hover {
+  transform: translateY(-8px);
+}
+
+.dubai-card-image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.dubai-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.dubai-destination-card:hover .dubai-card-image img {
+  transform: scale(1.08);
+}
+
+.dubai-card-content {
+  padding: 24px;
+}
+
+.dubai-card-content span {
+  color: #f59b32;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dubai-card-content h3 {
+  color: #102b4e;
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.dubai-card-content p {
+  color: #697586;
+  line-height: 1.7;
+  font-size: 14px;
+  min-height: 70px;
+}
+
+.dubai-card-content button,
+.dubai-package-content button {
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  color: #ed8c20;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* EXPERIENCES */
+
+.dubai-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.dubai-experience-card {
+  background: #f6f8fb;
+  padding: 30px 25px;
+  border-radius: 9px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.dubai-experience-card:hover {
+  background: #102b4e;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.dubai-experience-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.dubai-experience-card h3 {
+  color: #102b4e;
+  margin: 10px 0;
+}
+
+.dubai-experience-card:hover h3,
+.dubai-experience-card:hover p {
+  color: #fff;
+}
+
+.dubai-experience-card p {
+  color: #697586;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* PACKAGES */
+
+.dubai-packages {
+  background: #f6f8fb;
+}
+
+.dubai-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dubai-package-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.dubai-package-image {
+  height: 245px;
+  position: relative;
+}
+
+.dubai-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dubai-package-image span {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #f59b32;
+  color: #fff;
+  padding: 9px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dubai-package-content {
+  padding: 25px;
+}
+
+.dubai-package-content h3 {
+  color: #102b4e;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+.dubai-package-content p {
+  color: #697586;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 70px;
+}
+
+/* WHY CHOOSE US */
+
+.dubai-why {
+  background: #fff;
+}
+
+.dubai-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dubai-why-card {
+  background: #f6f8fb;
+  text-align: center;
+  padding: 30px 18px;
+  border-radius: 9px;
+}
+
+.dubai-why-card span {
+  font-size: 38px;
+}
+
+.dubai-why-card h3 {
+  color: #102b4e;
+  font-size: 17px;
+  margin: 16px 0 10px;
+}
+
+.dubai-why-card p {
+  color: #697586;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ENQUIRY */
+
+.dubai-enquiry {
+  background: #f5f7fa;
+}
+
+.dubai-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.dubai-enquiry-info h2 {
+  margin-bottom: 18px;
+}
+
+.dubai-enquiry-info > p {
+  color: #697586;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.dubai-contact-item {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.dubai-contact-item > span {
+  background: #fff0df;
+  color: #f59b32;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dubai-contact-item h4 {
+  color: #102b4e;
+  margin: 0 0 7px;
+}
+
+.dubai-contact-item p {
+  color: #697586;
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dubai-enquiry-form {
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.07);
+}
+
+.dubai-enquiry-form h3 {
+  color: #102b4e;
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.dubai-enquiry-form > p {
+  color: #697586;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.dubai-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.dubai-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dubai-form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #263449;
+}
+
+.dubai-form-group input,
+.dubai-form-group select,
+.dubai-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #dce1e8;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+
+.dubai-form-group input:focus,
+.dubai-form-group select:focus,
+.dubai-form-group textarea:focus {
+  border-color: #f59b32;
+}
+
+.dubai-form-full {
+  grid-column: 1 / -1;
+}
+
+.dubai-submit-btn {
+  width: 100%;
+  border: none;
+  background: #f59b32;
+  color: #fff;
+  padding: 15px;
+  margin-top: 22px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dubai-submit-btn:hover {
+  background: #dc7f18;
+}
+
+.dubai-enquiry-form small {
+  display: block;
+  text-align: center;
+  color: #87909d;
+  margin-top: 12px;
+}
+
+/* CTA */
+
+.dubai-cta {
+  padding: 85px 0;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(3, 16, 45, 0.78), rgba(3, 16, 45, 0.78)),
+    url("https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1920")
+      center/cover no-repeat;
+}
+
+.dubai-cta h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 0 0 15px;
+}
+
+.dubai-cta p {
+  color: #eee;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .dubai-destination-grid,
+  .dubai-package-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dubai-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dubai-enquiry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dubai-section {
+    padding: 60px 0;
+  }
+
+  .dubai-hero {
+    min-height: 560px;
+  }
+
+  .dubai-about-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .dubai-about-image {
+    height: 330px;
+  }
+
+  .dubai-destination-grid,
+  .dubai-package-grid,
+  .dubai-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-enquiry-form {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dubai-container {
+    width: 92%;
+  }
+
+  .dubai-hero {
+    min-height: 520px;
+  }
+
+  .dubai-hero-content {
+    padding: 65px 0;
+  }
+
+  .dubai-hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dubai-why-grid,
+  .dubai-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-form-full {
+    grid-column: auto;
+  }
+}

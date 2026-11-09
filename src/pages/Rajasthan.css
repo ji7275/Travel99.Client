@@ -1,0 +1,663 @@
+.rajasthan-page {
+  width: 100%;
+  color: #26364b;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background: #fff;
+}
+
+.rajasthan-page * {
+  box-sizing: border-box;
+}
+
+.raj-section {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 75px 25px;
+}
+
+.raj-label {
+  color: #f59b32;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+/* HERO */
+
+.raj-hero {
+  min-height: 540px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1900");
+  background-position: center;
+  background-size: cover;
+}
+
+.raj-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 16, 87, 0.91),
+    rgba(3, 16, 87, 0.57),
+    rgba(3, 16, 87, 0.12)
+  );
+}
+
+.raj-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1250px;
+  padding: 70px 25px;
+  margin: auto;
+  color: #fff;
+}
+
+.raj-small-title {
+  color: #ffb04c;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.raj-hero h1 {
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.15;
+  max-width: 750px;
+  margin: 22px 0;
+  font-weight: 800;
+}
+
+.raj-hero h1 span {
+  display: block;
+  color: #ffad45;
+}
+
+.raj-hero p {
+  max-width: 590px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #f2f4fa;
+  margin-bottom: 30px;
+}
+
+.raj-primary-btn,
+.raj-outline-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 27px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.raj-primary-btn {
+  color: #fff;
+  background: #f59b32;
+}
+
+.raj-primary-btn:hover {
+  background: #e17e13;
+  transform: translateY(-3px);
+}
+
+/* INTRO */
+
+.raj-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.raj-intro-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(3, 16, 87, 0.15);
+}
+
+.raj-intro-content h2,
+.raj-heading h2,
+.raj-enquiry-info h2 {
+  color: #031057;
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+
+.raj-intro-content h2 span {
+  color: #f59b32;
+}
+
+.raj-intro-content p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #667085;
+  margin-bottom: 17px;
+}
+
+.raj-outline-btn {
+  color: #031057;
+  border: 2px solid #031057;
+  margin-top: 10px;
+}
+
+.raj-outline-btn:hover {
+  color: #fff;
+  background: #031057;
+}
+
+/* COMMON HEADING */
+
+.raj-heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.raj-heading h2 {
+  margin-bottom: 12px;
+}
+
+.raj-heading p {
+  color: #727d8e;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* DESTINATIONS */
+
+.raj-destinations {
+  max-width: 1300px;
+}
+
+.raj-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.raj-destination-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(3, 16, 87, 0.1);
+  transition: 0.3s;
+}
+
+.raj-destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(3, 16, 87, 0.16);
+}
+
+.raj-card-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.raj-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.raj-destination-card:hover img {
+  transform: scale(1.08);
+}
+
+.raj-card-content {
+  padding: 22px 19px;
+}
+
+.raj-card-content span {
+  color: #f59b32;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.raj-card-content h3 {
+  color: #031057;
+  font-size: 22px;
+  margin: 9px 0;
+}
+
+.raj-card-content p {
+  color: #758092;
+  font-size: 13px;
+  line-height: 1.7;
+  min-height: 65px;
+}
+
+.raj-card-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #031057;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.raj-card-content a:hover {
+  color: #f59b32;
+}
+
+/* EXPERIENCES */
+
+.raj-experiences {
+  background: #f4f7fc;
+}
+
+.raj-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.raj-experience-card {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 3px solid #f59b32;
+  box-shadow: 0 5px 22px rgba(3, 16, 87, 0.06);
+  transition: 0.3s;
+}
+
+.raj-experience-card:hover {
+  transform: translateY(-6px);
+}
+
+.raj-experience-icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.raj-experience-card h3 {
+  color: #031057;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.raj-experience-card p {
+  color: #778195;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* PACKAGES */
+
+.raj-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.raj-package-card {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 25px rgba(3, 16, 87, 0.1);
+  transition: 0.3s;
+}
+
+.raj-package-card:hover {
+  transform: translateY(-7px);
+}
+
+.raj-package-image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.raj-package-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.raj-package-card:hover img {
+  transform: scale(1.07);
+}
+
+.raj-package-content {
+  padding: 22px;
+}
+
+.raj-duration {
+  font-size: 12px;
+  color: #f59b32;
+  font-weight: 700;
+}
+
+.raj-package-content h3 {
+  color: #031057;
+  font-size: 19px;
+  margin: 13px 0 22px;
+}
+
+.raj-package-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #edf0f5;
+  padding-top: 16px;
+}
+
+.raj-package-bottom small {
+  display: block;
+  color: #818b9b;
+  font-size: 11px;
+}
+
+.raj-package-bottom strong {
+  display: block;
+  color: #031057;
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+.raj-package-bottom a {
+  background: #f59b32;
+  color: #fff;
+  padding: 11px 14px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.raj-package-bottom a:hover {
+  background: #031057;
+}
+
+/* WHY CHOOSE US */
+
+.raj-why {
+  background: #031057;
+  color: #fff;
+}
+
+.raj-why .raj-heading h2 {
+  color: #fff;
+}
+
+.raj-why .raj-heading p {
+  color: #d0d6e9;
+}
+
+.raj-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.raj-why-grid > div {
+  text-align: center;
+  padding: 28px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.raj-why-grid span {
+  font-size: 35px;
+}
+
+.raj-why-grid h3 {
+  color: #ffad45;
+  font-size: 17px;
+  margin: 15px 0 9px;
+}
+
+.raj-why-grid p {
+  color: #e0e5f2;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ENQUIRY */
+
+.raj-enquiry {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.raj-enquiry-info p {
+  color: #778195;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.raj-contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.raj-contact-detail > span {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #fff3e4;
+  color: #031057;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.raj-contact-detail strong {
+  color: #031057;
+  font-size: 14px;
+}
+
+.raj-contact-detail p {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+.raj-form {
+  padding: 32px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 35px rgba(3, 16, 87, 0.12);
+}
+
+.raj-form h3 {
+  color: #031057;
+  font-size: 24px;
+  margin: 0 0 23px;
+}
+
+.raj-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.raj-form input,
+.raj-form select,
+.raj-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce1e9;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #26364b;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.raj-form input:focus,
+.raj-form select:focus,
+.raj-form textarea:focus {
+  border-color: #f59b32;
+  box-shadow: 0 0 0 2px rgba(245, 155, 50, 0.12);
+}
+
+.raj-form textarea {
+  margin-top: 15px;
+  resize: vertical;
+}
+
+.raj-submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  background: #f59b32;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.raj-submit-btn:hover {
+  background: #031057;
+}
+
+/* BOTTOM CTA */
+
+.raj-bottom-cta {
+  padding: 55px 20px;
+  background: #f4f7fc;
+  text-align: center;
+}
+
+.raj-bottom-cta h2 {
+  color: #031057;
+  font-size: clamp(25px, 3vw, 35px);
+  margin: 0 0 12px;
+}
+
+.raj-bottom-cta p {
+  color: #707b8c;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.raj-bottom-cta a {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 5px;
+  background: #f59b32;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.raj-bottom-cta a:hover {
+  background: #031057;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .raj-destination-grid,
+  .raj-experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .raj-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .raj-intro {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .raj-hero {
+    min-height: 470px;
+  }
+
+  .raj-intro,
+  .raj-enquiry {
+    grid-template-columns: 1fr;
+  }
+
+  .raj-intro-image img {
+    height: 320px;
+  }
+
+  .raj-package-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .raj-section {
+    padding: 55px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .raj-hero {
+    min-height: 440px;
+  }
+
+  .raj-hero-content {
+    padding: 45px 20px;
+  }
+
+  .raj-small-title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .raj-hero h1 {
+    font-size: 38px;
+  }
+
+  .raj-hero p {
+    font-size: 14px;
+  }
+
+  .raj-destination-grid,
+  .raj-experience-grid,
+  .raj-package-grid,
+  .raj-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .raj-card-image {
+    height: 230px;
+  }
+
+  .raj-package-image {
+    height: 230px;
+  }
+
+  .raj-form {
+    padding: 22px 16px;
+  }
+
+  .raj-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .raj-intro-image img {
+    height: 260px;
+  }
+
+  .raj-bottom-cta {
+    padding: 45px 18px;
+  }
+}

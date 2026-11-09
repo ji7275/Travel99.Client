@@ -1,0 +1,965 @@
+.goa-page {
+  width: 100%;
+  overflow: hidden;
+  color: #26364a;
+  background: #fff;
+}
+
+.goa-container {
+  width: 92%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.goa-section {
+  padding: 85px 0;
+}
+
+/* HERO */
+.goa-hero {
+  min-height: 590px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.goa-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 16, 48, 0.88),
+    rgba(3, 16, 48, 0.52),
+    rgba(3, 16, 48, 0.08)
+  );
+}
+
+.goa-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 85px 0;
+  color: #fff;
+}
+
+.goa-tag,
+.goa-section-tag {
+  display: inline-block;
+  color: #f5a623;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.goa-hero h1 {
+  font-size: clamp(45px, 6vw, 76px);
+  line-height: 1.08;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.goa-hero h1 span {
+  color: #f5a623;
+}
+
+.goa-hero-content > p {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #f1f4fa;
+  margin-bottom: 30px;
+}
+
+.goa-hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.goa-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 27px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.goa-btn-orange {
+  background: #f5a623;
+  color: #102b4e;
+}
+
+.goa-btn-orange:hover {
+  background: #fff;
+  color: #102b4e;
+  transform: translateY(-2px);
+}
+
+.goa-btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.goa-btn-outline:hover {
+  background: #fff;
+  color: #102b4e;
+}
+
+.goa-breadcrumb {
+  display: flex;
+  gap: 12px;
+  margin-top: 45px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.goa-breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SECTION HEADING */
+.goa-section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+.goa-section-heading h2,
+.goa-intro-content h2,
+.goa-why h2,
+.goa-enquiry-content h2 {
+  color: #102b4e;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  margin: 0 0 16px;
+  font-weight: 800;
+}
+
+.goa-section-heading p,
+.goa-intro-content p,
+.goa-why > div > p,
+.goa-enquiry-content > p {
+  color: #68778b;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* INTRO */
+.goa-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.goa-intro-image {
+  position: relative;
+}
+
+.goa-intro-image img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+.goa-image-label {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 24px;
+  background: #fff;
+  border-left: 4px solid #f5a623;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.goa-image-label strong {
+  color: #102b4e;
+  font-size: 22px;
+}
+
+.goa-image-label span {
+  color: #68778b;
+  font-size: 13px;
+}
+
+.goa-intro-content h2 span {
+  color: #f5a623;
+}
+
+.goa-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.goa-highlights div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #102b4e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.goa-highlights div span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff2d8;
+  font-size: 19px;
+}
+
+.goa-text-link {
+  display: inline-block;
+  color: #102b4e;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.goa-text-link span {
+  color: #f5a623;
+}
+
+/* PLACES */
+.goa-places {
+  background: #f7f9fc;
+}
+
+.goa-place-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.goa-place-card,
+.goa-package-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(16, 43, 78, 0.08);
+  transition: 0.3s;
+}
+
+.goa-place-card:hover,
+.goa-package-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(16, 43, 78, 0.14);
+}
+
+.goa-place-image {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.goa-place-image img,
+.goa-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+
+.goa-place-card:hover img,
+.goa-package-card:hover img {
+  transform: scale(1.06);
+}
+
+.goa-place-image > span {
+  position: absolute;
+  left: 13px;
+  bottom: 13px;
+  background: #f5a623;
+  color: #102b4e;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.goa-place-info {
+  padding: 20px;
+}
+
+.goa-place-info h3,
+.goa-package-info h3 {
+  color: #102b4e;
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+
+.goa-place-info p {
+  color: #68778b;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 72px;
+}
+
+.goa-place-info a {
+  color: #d88b08;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* EXPERIENCES */
+.goa-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.goa-experience-card {
+  text-align: center;
+  padding: 30px 20px;
+  border: 1px solid #edf0f5;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.goa-experience-card:hover {
+  background: #102b4e;
+  transform: translateY(-5px);
+}
+
+.goa-experience-card > span {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #fff2d8;
+  font-size: 28px;
+}
+
+.goa-experience-card h3 {
+  color: #102b4e;
+  font-size: 18px;
+}
+
+.goa-experience-card p {
+  color: #68778b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.goa-experience-card:hover h3,
+.goa-experience-card:hover p {
+  color: #fff;
+}
+
+/* PACKAGES */
+.goa-packages {
+  background: #f7f9fc;
+}
+
+.goa-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.goa-package-image {
+  height: 235px;
+  position: relative;
+  overflow: hidden;
+}
+
+.goa-package-image > span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 7px 14px;
+  background: #f5a623;
+  color: #102b4e;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.goa-package-info {
+  padding: 23px;
+}
+
+.goa-duration {
+  color: #d88b08;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.goa-package-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+}
+
+.goa-package-info li {
+  color: #68778b;
+  font-size: 13px;
+}
+
+.goa-package-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #edf0f5;
+  padding-top: 17px;
+}
+
+.goa-package-bottom strong {
+  color: #102b4e;
+  font-size: 15px;
+}
+
+.goa-package-bottom a {
+  color: #d88b08;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* WHY CHOOSE US */
+.goa-why {
+  background: #fff;
+}
+
+.goa-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.goa-why-list {
+  display: grid;
+  gap: 18px;
+}
+
+.goa-why-list > div {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f7f9fc;
+}
+
+.goa-why-list > div > span {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f5a623;
+  color: #102b4e;
+  font-weight: 900;
+}
+
+.goa-why-list h3 {
+  margin: 0 0 5px;
+  color: #102b4e;
+  font-size: 17px;
+}
+
+.goa-why-list p {
+  margin: 0;
+  color: #68778b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ENQUIRY */
+
+/* =================================
+   PROFESSIONAL GOA ENQUIRY SECTION
+================================= */
+
+.goa-enquiry {
+  width: 100%;
+  padding: 85px 20px;
+  background: #f4f7fc;
+}
+
+.goa-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.goa-enquiry-content {
+  width: 100%;
+}
+
+.goa-enquiry-content .goa-section-tag {
+  display: inline-block;
+  color: #f59b32;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.goa-enquiry-content h2 {
+  color: #102b4e;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.goa-enquiry-content h2 span {
+  color: #f59b32;
+  display: block;
+}
+
+.goa-enquiry-description {
+  color: #66758a;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.goa-contact-heading {
+  margin-bottom: 22px;
+}
+
+.goa-contact-heading h3 {
+  color: #102b4e;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.goa-contact-heading p {
+  color: #8490a0;
+  font-size: 14px;
+}
+
+/* CONTACT DETAILS */
+
+.goa-contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 19px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 20px rgba(16, 43, 78, 0.04);
+}
+
+.goa-contact-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #fff1df;
+  color: #f59b32;
+  font-size: 23px;
+}
+
+.goa-contact-detail small {
+  display: block;
+  color: #8793a3;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.goa-contact-detail a {
+  display: block;
+  color: #102b4e;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.goa-contact-detail a:hover {
+  color: #f59b32;
+}
+
+.goa-contact-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  color: #53657c;
+  font-size: 13px;
+}
+
+.goa-contact-note span {
+  color: #f59b32;
+  font-size: 22px;
+}
+
+.goa-contact-note p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* RIGHT FORM CARD */
+
+.goa-enquiry-form {
+  width: 100%;
+  padding: 38px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e9edf4;
+  box-shadow: 0 15px 50px rgba(16, 43, 78, 0.09);
+}
+
+.goa-form-heading {
+  margin-bottom: 28px;
+}
+
+.goa-form-heading > span {
+  display: inline-block;
+  color: #f59b32;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.goa-form-heading h3 {
+  color: #102b4e;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 9px;
+}
+
+.goa-form-heading p {
+  color: #8390a1;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* FORM GRID */
+
+.goa-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.goa-form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.goa-form-full {
+  grid-column: 1 / -1;
+}
+
+.goa-form-group label {
+  color: #263d59;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.goa-form-group label b {
+  color: #e74c3c;
+}
+
+.goa-form-group input,
+.goa-form-group select,
+.goa-form-group textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  background: #fbfcfe;
+  color: #263d59;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.goa-form-group input,
+.goa-form-group select {
+  height: 48px;
+}
+
+.goa-form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.goa-form-group input:focus,
+.goa-form-group select:focus,
+.goa-form-group textarea:focus {
+  border-color: #f59b32;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(245, 155, 50, 0.12);
+}
+
+/* SUBMIT BUTTON */
+
+.goa-submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 9px;
+  background: #102b4e;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.goa-submit-btn span {
+  color: #f59b32;
+  font-size: 20px;
+}
+
+.goa-submit-btn:hover {
+  background: #f59b32;
+  color: #102b4e;
+  transform: translateY(-2px);
+}
+
+.goa-submit-btn:hover span {
+  color: #102b4e;
+}
+
+.goa-form-note {
+  display: block;
+  text-align: center;
+  color: #8490a0;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .goa-enquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .goa-enquiry-content h2 {
+    font-size: 36px;
+  }
+
+  .goa-enquiry-form {
+    max-width: 750px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .goa-enquiry {
+    padding: 55px 15px;
+  }
+
+  .goa-enquiry-grid {
+    gap: 28px;
+  }
+
+  .goa-enquiry-content h2 {
+    font-size: 30px;
+  }
+
+  .goa-enquiry-description {
+    font-size: 14px;
+  }
+
+  .goa-contact-detail {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .goa-contact-detail a {
+    font-size: 13px;
+  }
+
+  .goa-enquiry-form {
+    padding: 23px 17px;
+    border-radius: 13px;
+  }
+
+  .goa-form-heading h3 {
+    font-size: 24px;
+  }
+
+  .goa-form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .goa-form-full {
+    grid-column: auto;
+  }
+
+  .goa-submit-btn {
+    font-size: 13px;
+    padding: 15px 10px;
+  }
+}
+
+/* FINAL CTA */
+.goa-final-cta {
+  padding: 65px 0;
+  text-align: center;
+  color: #fff;
+  background: #102b4e;
+}
+
+.goa-final-cta h2 {
+  font-size: clamp(27px, 4vw, 40px);
+  margin: 0 0 12px;
+}
+
+.goa-final-cta p {
+  color: #dce5f1;
+  margin-bottom: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .goa-place-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goa-experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goa-intro-grid,
+  .goa-why-grid,
+  .goa-enquiry-grid {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .goa-section {
+    padding: 60px 0;
+  }
+
+  .goa-container {
+    width: 90%;
+  }
+
+  .goa-hero {
+    min-height: 540px;
+    background-position: center;
+  }
+
+  .goa-hero-content {
+    padding: 65px 0;
+  }
+
+  .goa-hero h1 {
+    font-size: 44px;
+  }
+
+  .goa-hero-content > p {
+    font-size: 15px;
+  }
+
+  .goa-intro-grid,
+  .goa-why-grid,
+  .goa-enquiry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goa-intro-image img {
+    height: 300px;
+  }
+
+  .goa-place-grid,
+  .goa-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goa-experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .goa-enquiry-form {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .goa-hero h1 {
+    font-size: 37px;
+  }
+
+  .goa-hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .goa-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .goa-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .goa-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goa-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goa-form-full {
+    grid-column: auto;
+  }
+
+  .goa-breadcrumb {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}

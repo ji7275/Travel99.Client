@@ -1,0 +1,1326 @@
+/* =========================================
+   TRAVEL99 - BALI DESTINATION PAGE
+========================================= */
+
+.bali-page {
+  --bali-primary: #eaa32f;
+  --bali-primary-dark: #f5a623;
+  --bali-dark: #031057;
+  --bali-text: #606b75;
+  --bali-light: #fff7f4;
+  --bali-border: #eee8e5;
+  width: 100%;
+  overflow: hidden;
+  color: var(--bali-dark);
+  background: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.bali-page * {
+  box-sizing: border-box;
+}
+
+.bali-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bali-section {
+  padding: 85px 0;
+}
+
+.bali-section-label {
+  display: inline-block;
+  color: var(--bali-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 13px;
+}
+
+.bali-section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+.bali-section-heading h2,
+.bali-intro-content h2,
+.bali-itinerary-content h2,
+.bali-why-grid h2,
+.bali-enquiry-content h2 {
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0 0 15px;
+  color: var(--bali-dark);
+}
+
+.bali-section-heading h2 span,
+.bali-intro-content h2 span,
+.bali-itinerary-content h2 span,
+.bali-why-grid h2 span,
+.bali-enquiry-content h2 span {
+  color: var(--bali-primary);
+}
+
+.bali-section-heading p {
+  margin: 0;
+  color: var(--bali-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* HERO */
+
+.bali-hero {
+  min-height: 640px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=2000&q=90");
+  background-size: cover;
+  background-position: center 48%;
+  color: #fff;
+}
+
+.bali-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 24, 31, 0.83) 0%,
+    rgba(13, 24, 31, 0.57) 48%,
+    rgba(13, 24, 31, 0.12) 100%
+  );
+}
+
+.bali-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 55px;
+  padding-bottom: 65px;
+}
+
+.bali-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.bali-eyebrow span {
+  width: 28px;
+  height: 2px;
+  background: var(--bali-primary);
+}
+
+.bali-hero h1 {
+  font-size: clamp(45px, 6.5vw, 76px);
+  line-height: 1.08;
+  margin: 0 0 20px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.bali-hero h1 span {
+  color: #f5a623;
+}
+
+.bali-hero-content > p {
+  max-width: 570px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0 0 30px;
+}
+
+.bali-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.bali-btn {
+  min-height: 48px;
+  padding: 0 23px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.bali-btn span {
+  font-size: 19px;
+}
+
+.bali-btn-primary {
+  color: #fff;
+  border: 1px solid var(--bali-primary);
+  background: var(--bali-primary);
+}
+
+.bali-btn-primary:hover {
+  background: var(--bali-primary-dark);
+  border-color: var(--bali-primary-dark);
+  transform: translateY(-2px);
+}
+
+.bali-btn-outline {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+}
+
+.bali-btn-outline:hover {
+  color: var(--bali-dark);
+  background: #fff;
+}
+
+.bali-hero-stats {
+  display: flex;
+  gap: 45px;
+  margin-top: 55px;
+}
+
+.bali-hero-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bali-hero-stats strong {
+  font-size: 24px;
+  color: #fff;
+}
+
+.bali-hero-stats span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+}
+
+.bali-hero-bottom {
+  position: absolute;
+  right: 5%;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.bali-hero-bottom > span:first-child {
+  color: #f5a623;
+  font-weight: 800;
+}
+
+.bali-hero-line {
+  height: 1px;
+  width: 55px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* INTRO */
+
+.bali-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.bali-intro-image {
+  position: relative;
+  min-height: 450px;
+}
+
+.bali-intro-image > img {
+  width: 100%;
+  height: 450px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bali-image-label {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 17px 22px;
+  background: #fff;
+  border-left: 4px solid var(--bali-primary);
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.bali-image-label strong {
+  font-size: 16px;
+}
+
+.bali-image-label span {
+  color: var(--bali-text);
+  font-size: 12px;
+}
+
+.bali-intro-content > p,
+.bali-itinerary-content > p,
+.bali-why-grid > div:first-child > p,
+.bali-enquiry-content > p {
+  color: var(--bali-text);
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0 0 14px;
+}
+
+.bali-feature-list {
+  display: grid;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.bali-feature-list div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #031057;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bali-feature-list div span {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  background: var(--bali-primary);
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.bali-text-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--bali-primary);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.bali-text-button span {
+  margin-left: 7px;
+  font-size: 18px;
+}
+
+/* HIGHLIGHTS */
+
+.bali-highlights {
+  background: var(--bali-light);
+  padding: 27px 0;
+  border-top: 1px solid #f8e9e5;
+  border-bottom: 1px solid #f8e9e5;
+}
+
+.bali-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.bali-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.bali-highlight > span {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 23px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.bali-highlight div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bali-highlight strong {
+  font-size: 14px;
+}
+
+.bali-highlight small {
+  color: var(--bali-text);
+  font-size: 12px;
+}
+
+/* PLACES */
+
+.bali-places-section {
+  background: #fff;
+}
+
+.bali-places-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.bali-place-card {
+  background: #fff;
+  border: 1px solid var(--bali-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.bali-place-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 35px rgba(24, 35, 45, 0.1);
+}
+
+.bali-place-image {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bali-place-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.bali-place-card:hover .bali-place-image img {
+  transform: scale(1.07);
+}
+
+.bali-place-number {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  padding: 7px 11px;
+  color: #fff;
+  background: var(--bali-primary);
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 3px;
+}
+
+.bali-place-info {
+  padding: 19px 17px 20px;
+}
+
+.bali-place-info h3 {
+  font-size: 17px;
+  margin: 0 0 9px;
+}
+
+.bali-place-info p {
+  color: var(--bali-text);
+  font-size: 13px;
+  line-height: 1.7;
+  min-height: 66px;
+  margin: 0 0 13px;
+}
+
+.bali-place-info button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--bali-primary);
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.bali-place-info button span {
+  margin-left: 5px;
+}
+
+/* PACKAGES */
+
+.bali-packages-section {
+  background: #fff8f6;
+}
+
+.bali-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.bali-package-card {
+  background: #fff;
+  border: 1px solid #f0e8e5;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.bali-package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(24, 35, 45, 0.1);
+}
+
+.bali-package-image {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bali-package-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bali-package-card:hover .bali-package-image img {
+  transform: scale(1.06);
+}
+
+.bali-package-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 8px 13px;
+  color: #fff;
+  background: var(--bali-primary);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.bali-package-info {
+  padding: 22px;
+}
+
+.bali-duration {
+  color: var(--bali-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bali-package-info h3 {
+  font-size: 20px;
+  margin: 12px 0 9px;
+}
+
+.bali-package-info > p {
+  color: var(--bali-text);
+  font-size: 13px;
+  line-height: 1.7;
+  min-height: 66px;
+  margin: 0 0 20px;
+}
+
+.bali-package-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 17px;
+  border-top: 1px solid var(--bali-border);
+}
+
+.bali-package-bottom > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bali-package-bottom small {
+  color: #84909a;
+  font-size: 11px;
+}
+
+.bali-package-bottom strong {
+  color: var(--bali-primary);
+  font-size: 23px;
+}
+
+.bali-package-bottom button {
+  border: 0;
+  border-radius: 4px;
+  background: var(--bali-primary);
+  color: #fff;
+  padding: 11px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.bali-package-bottom button:hover {
+  background: var(--bali-primary-dark);
+}
+
+.bali-price-note {
+  margin: 22px 0 0;
+  color: #7c858d;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ITINERARY */
+
+.bali-itinerary-section {
+  background: #fff;
+}
+
+.bali-itinerary-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.bali-timeline {
+  margin: 27px 0 30px;
+  display: grid;
+  gap: 0;
+}
+
+.bali-timeline-item {
+  display: flex;
+  gap: 17px;
+  position: relative;
+  padding-bottom: 23px;
+}
+
+.bali-timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 18px;
+  bottom: 0;
+  width: 1px;
+  background: #f3c8c7;
+}
+
+.bali-timeline-item > span {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bali-primary);
+  background: #fff0ed;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.bali-timeline-item h3 {
+  margin: 2px 0 5px;
+  font-size: 15px;
+}
+
+.bali-timeline-item p {
+  margin: 0;
+  color: var(--bali-text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.bali-itinerary-image {
+  position: relative;
+}
+
+.bali-itinerary-image > img {
+  width: 100%;
+  height: 570px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bali-itinerary-note {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bali-itinerary-note > span {
+  color: var(--bali-primary);
+  font-size: 28px;
+}
+
+.bali-itinerary-note div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bali-itinerary-note strong {
+  font-size: 14px;
+}
+
+.bali-itinerary-note small {
+  color: var(--bali-text);
+  font-size: 12px;
+}
+
+/* GALLERY */
+
+.bali-gallery-section {
+  background: #fff8f6;
+}
+
+.bali-gallery-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  gap: 14px;
+}
+
+.bali-gallery-item {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.bali-gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bali-gallery-item:hover img {
+  transform: scale(1.07);
+}
+
+.bali-gallery-1 {
+  grid-row: span 2;
+}
+
+.bali-gallery-4 {
+  grid-column: span 2;
+}
+
+/* WHY TRAVEL99 */
+
+.bali-why-section {
+  padding: 75px 0;
+  background: #031057;
+  color: #fff;
+}
+
+.bali-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.bali-why-grid h2 {
+  color: #fff;
+}
+
+.bali-why-grid > div:first-child > p {
+  color: #c3cbd1;
+}
+
+.bali-why-points {
+  display: grid;
+  gap: 22px;
+}
+
+.bali-why-points > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.bali-why-points > div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.bali-why-points > div > span {
+  color: #f5a623;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.bali-why-points h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.bali-why-points p {
+  margin: 0;
+  color: #c3cbd1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ENQUIRY */
+
+.bali-enquiry-section {
+  background: #fff;
+}
+
+.bali-enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+  gap: 60px;
+}
+
+.bali-enquiry-content {
+  padding-top: 20px;
+}
+
+.bali-contact-details {
+  display: grid;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.bali-contact-details > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.bali-contact-details > div > span {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bali-primary);
+  background: #fff0ed;
+  border-radius: 50%;
+  font-size: 19px;
+}
+
+.bali-contact-details > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bali-contact-details small {
+  color: var(--bali-text);
+  font-size: 12px;
+}
+
+.bali-contact-details strong {
+  color: var(--bali-dark);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.bali-enquiry-form {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid var(--bali-border);
+  border-radius: 9px;
+  box-shadow: 0 12px 40px rgba(28, 39, 48, 0.07);
+}
+
+.bali-enquiry-form h3 {
+  margin: 0 0 7px;
+  font-size: 23px;
+}
+
+.bali-enquiry-form > p {
+  margin: 0 0 24px;
+  color: var(--bali-text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.bali-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.bali-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 17px;
+  min-width: 0;
+}
+
+.bali-form-group label {
+  color: #031057;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bali-form-group input,
+.bali-form-group select,
+.bali-form-group textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #e5e8eb;
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  color: var(--bali-dark);
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s ease;
+}
+
+.bali-form-group input,
+.bali-form-group select {
+  height: 45px;
+}
+
+.bali-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.bali-form-group input:focus,
+.bali-form-group select:focus,
+.bali-form-group textarea:focus {
+  border-color: var(--bali-primary);
+}
+
+.bali-submit-button {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--bali-primary);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.bali-submit-button:hover {
+  background: var(--bali-primary-dark);
+}
+
+.bali-submit-button span {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.bali-form-note {
+  display: block;
+  margin-top: 12px;
+  color: #89939b;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.bali-success-message {
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  background: #eaf8ef;
+  color: #237344;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* FINAL CTA */
+
+.bali-final-cta {
+  padding: 65px 0;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(23, 33, 43, 0.82), rgba(23, 33, 43, 0.82)),
+    url("https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1800&q=85")
+      center 50% / cover;
+}
+
+.bali-final-cta > .bali-container > span {
+  color: #e8a333;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.bali-final-cta h2 {
+  margin: 14px 0;
+  font-size: clamp(27px, 4vw, 40px);
+  color: #fff;
+}
+
+.bali-final-cta p {
+  margin: 0 0 25px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.bali-btn-light {
+  color: var(--bali-primary);
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.bali-btn-light:hover {
+  color: #fff;
+  background: var(--bali-primary);
+  border-color: var(--bali-primary);
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .bali-section {
+    padding: 70px 0;
+  }
+
+  .bali-intro-grid,
+  .bali-itinerary-grid {
+    gap: 35px;
+  }
+
+  .bali-places-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bali-highlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+
+  .bali-why-grid,
+  .bali-enquiry-grid {
+    gap: 35px;
+  }
+
+  .bali-hero {
+    min-height: 590px;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+  .bali-container {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .bali-section {
+    padding: 55px 0;
+  }
+
+  .bali-hero {
+    min-height: 620px;
+    background-position: 58% center;
+  }
+
+  .bali-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(13, 24, 31, 0.82),
+      rgba(13, 24, 31, 0.48)
+    );
+  }
+
+  .bali-hero-content {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .bali-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+  }
+
+  .bali-hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -1px;
+  }
+
+  .bali-hero-content > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .bali-hero-buttons {
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 260px;
+  }
+
+  .bali-btn {
+    width: 100%;
+  }
+
+  .bali-hero-stats {
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .bali-hero-stats strong {
+    font-size: 20px;
+  }
+
+  .bali-hero-stats span {
+    font-size: 10px;
+  }
+
+  .bali-hero-bottom {
+    right: 17px;
+    bottom: 20px;
+  }
+
+  .bali-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .bali-section-heading h2,
+  .bali-intro-content h2,
+  .bali-itinerary-content h2,
+  .bali-why-grid h2,
+  .bali-enquiry-content h2 {
+    font-size: 29px;
+  }
+
+  .bali-section-heading p {
+    font-size: 13px;
+  }
+
+  .bali-intro-grid,
+  .bali-itinerary-grid,
+  .bali-why-grid,
+  .bali-enquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bali-intro-image,
+  .bali-intro-image > img {
+    min-height: 300px;
+    height: 300px;
+  }
+
+  .bali-intro-content > p,
+  .bali-itinerary-content > p,
+  .bali-why-grid > div:first-child > p,
+  .bali-enquiry-content > p {
+    font-size: 13px;
+  }
+
+  .bali-highlight-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+  }
+
+  .bali-highlight {
+    justify-content: flex-start;
+    gap: 9px;
+  }
+
+  .bali-highlight > span {
+    width: 39px;
+    height: 39px;
+    font-size: 19px;
+  }
+
+  .bali-highlight strong {
+    font-size: 11px;
+  }
+
+  .bali-highlight small {
+    font-size: 10px;
+  }
+
+  .bali-places-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+  }
+
+  .bali-place-image {
+    height: 145px;
+  }
+
+  .bali-place-info {
+    padding: 14px 12px;
+  }
+
+  .bali-place-info h3 {
+    font-size: 14px;
+  }
+
+  .bali-place-info p {
+    font-size: 11px;
+    min-height: 75px;
+  }
+
+  .bali-place-info button {
+    font-size: 11px;
+  }
+
+  .bali-packages-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bali-package-image {
+    height: 220px;
+  }
+
+  .bali-package-info {
+    padding: 18px;
+  }
+
+  .bali-package-info h3 {
+    font-size: 18px;
+  }
+
+  .bali-package-info > p {
+    min-height: 0;
+  }
+
+  .bali-package-bottom strong {
+    font-size: 21px;
+  }
+
+  .bali-itinerary-image > img {
+    height: 350px;
+  }
+
+  .bali-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 170px 145px 145px;
+    gap: 9px;
+  }
+
+  .bali-gallery-1 {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .bali-gallery-4 {
+    grid-column: span 2;
+  }
+
+  .bali-why-section {
+    padding: 55px 0;
+  }
+
+  .bali-enquiry-form {
+    padding: 22px 16px;
+  }
+
+  .bali-enquiry-form h3 {
+    font-size: 20px;
+  }
+
+  .bali-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .bali-final-cta {
+    padding: 52px 0;
+  }
+
+  .bali-final-cta h2 {
+    font-size: 27px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .bali-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .bali-hero {
+    min-height: 650px;
+  }
+
+  .bali-hero-stats {
+    gap: 13px;
+  }
+
+  .bali-hero-stats strong {
+    font-size: 18px;
+  }
+
+  .bali-places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bali-place-image {
+    height: 190px;
+  }
+
+  .bali-place-info p {
+    min-height: auto;
+  }
+
+  .bali-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bali-gallery-grid {
+    grid-template-rows: 155px 125px 125px 125px;
+  }
+
+  .bali-gallery-1,
+  .bali-gallery-4 {
+    grid-column: span 2;
+  }
+}
